@@ -2,12 +2,17 @@ import os
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-# === CSS: Light Mode + Hide Badges + Reduce Padding ===
+
+# === Streamlit Page Config ===
+st.set_page_config(
+    page_title="Federal Workforce Dashboard",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# === Clean UI: Light Theme, Hide Footer & MainMenu ===
 st.markdown("""
     <style>
-    .block-container {
-        padding-top: 1rem !important;
-    }
     body {
         background-color: white;
         color: black;
@@ -19,10 +24,10 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# === Data Path Configuration ===
+# === Data Path ===
 DATA_PATH = "data"
 
-# === Load CSVs ===
+# === Safe CSV Loader ===
 def load_csv(file_name):
     try:
         return pd.read_csv(os.path.join(DATA_PATH, file_name))
@@ -30,7 +35,7 @@ def load_csv(file_name):
         st.error(f"⚠️ Error loading {file_name}: {e}")
         return None
 
-# Load all files into dictionary
+# === Load All Data ===
 dfs = {
     "available_df": load_csv("city_skill_Available_Talent_projection.csv"),
     "alignment_df": load_csv("city_skill_demand_alignment_live.csv"),
@@ -39,18 +44,16 @@ dfs = {
     "fedscope_df": load_csv("fedscope_enriched_summary.csv"),
 }
 
-# Stop if anything failed to load
 if any(df is None for df in dfs.values()):
     st.stop()
 
-# Unpack
 available_df = dfs["available_df"]
 alignment_df = dfs["alignment_df"]
 decision_df = dfs["decision_df"]
 layoffs_df = dfs["layoffs_df"]
 fedscope_df = dfs["fedscope_df"]
 
-# === SIDEBAR ===
+# === Sidebar Filters ===
 st.sidebar.header("🧭 Filters")
 view_mode = st.sidebar.radio("View Mode", ["National", "City"])
 selected_city = None
@@ -61,7 +64,7 @@ if view_mode == "City":
 agencies = sorted(fedscope_df["Agency Name"].dropna().unique())
 selected_agency = st.sidebar.selectbox("Filter by Agency (optional)", ["All"] + agencies)
 
-# === FILTERING ===
+# === Apply Filters ===
 if view_mode == "City":
     avail_data = available_df[available_df["Location Name"] == selected_city]
     align_data = alignment_df[alignment_df["Location Name"] == selected_city]
@@ -81,8 +84,8 @@ if selected_agency != "All":
     layoff_data = layoff_data[layoff_data["Agency"] == selected_agency]
     fed_data = fed_data[fed_data["Agency Name"] == selected_agency]
 
-# === HEADER ===
-st.markdown("""
+# === Header ===
+st.markdown(f"""
 <h1 style='text-align: center; color: white; background-color: #003366; padding: 25px; border-radius: 8px'>
 🏛️ Federal Workforce and Skill Availability Dashboard
 </h1>
@@ -95,7 +98,7 @@ col1.metric("🔍 Skill Categories", avail_data["Skill Category"].nunique())
 col2.metric("👥 Available Talent", f"{avail_data['Available Talent'].sum():,.0f}")
 col3.metric("🏆 Most Available Skill", avail_data.loc[avail_data["Available Talent"].idxmax(), "Skill Category"] if not avail_data.empty else "N/A")
 
-# === TABS ===
+# === Tabs ===
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "Talent Availability",
     "Demand vs Supply",
@@ -104,7 +107,6 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "Decision Intelligence"
 ])
 
-# === TAB 1 ===
 with tab1:
     st.subheader(f"📊 Talent Availability by Skill — {label_title}")
     if not avail_data.empty:
@@ -118,7 +120,6 @@ with tab1:
     else:
         st.warning("No available talent data.")
 
-# === TAB 2 ===
 with tab2:
     st.subheader(f"⚖️ Demand-to-Supply Analysis — {label_title}")
     if not align_data.empty:
@@ -132,18 +133,16 @@ with tab2:
     else:
         st.warning("No demand alignment data.")
 
-# === TAB 3 ===
 with tab3:
     st.subheader(f"📰 Layoff Events — {label_title}")
     if not layoff_data.empty:
-        st.dataframe(layoff_data[[ 
+        st.dataframe(layoff_data[[
             "Date", "Agency", "Occupations Affected", "Locations Impacted",
             "Key Skills Potentially Affected", "Layoff Risk Level", "Article Title", "Link"
         ]], use_container_width=True)
     else:
         st.info("No layoff news available.")
 
-# === TAB 4 ===
 with tab4:
     st.subheader(f"🏢 Federal Staff Breakdown — {label_title}")
     if not fed_data.empty:
@@ -158,7 +157,6 @@ with tab4:
     else:
         st.warning("No Fedscope data available.")
 
-# === TAB 5 ===
 with tab5:
     st.subheader(f"✅ Action Plan View — {label_title}")
     if not decision_data.empty:
