@@ -3,17 +3,17 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-# === Set Data Directory Path ===
-DATA_PATH = os.path.join(os.getcwd(), "data")  # Assumes you're running from root where data/ exists
-
-# === Debug Info ===
+# === Define Absolute Path to Data Directory ===
+DATA_PATH = os.path.join(os.getcwd(), "data")
 st.markdown(f"📁 **Absolute Data Path**: `{DATA_PATH}`")
+
+# === Show available files (Debug) ===
 try:
     files = os.listdir(DATA_PATH)
-    st.success("✅ Files in /data:")
+    st.success("✅ Files in /data folder:")
     st.write(files)
 except Exception as e:
-    st.warning(f"⚠️ Couldn't list files in data/: {e}")
+    st.warning(f"⚠️ Couldn't list files in /data/: {e}")
 
 # === Helper to Load CSVs ===
 def load_csv(file_name):
@@ -26,13 +26,14 @@ def load_csv(file_name):
         st.error(f"⚠️ Error loading `{file_name}`: {e}")
         return None
 
-# === Load All Data ===
+# === Load All CSV Files ===
 available_df = load_csv("city_skill_Available_Talent_projection.csv")
 alignment_df = load_csv("city_skill_demand_alignment_live.csv")
 decision_df = load_csv("city_skill_decision_table.csv")
 layoffs_df = load_csv("federal_layoff_news_with_categories.csv")
 fedscope_df = load_csv("fedscope_enriched_summary.csv")
 
+# === Stop if anything is missing ===
 if None in [available_df, alignment_df, decision_df, layoffs_df, fedscope_df]:
     st.stop()
 
@@ -48,7 +49,7 @@ if view_mode == "City":
 agencies = sorted(fedscope_df["Agency Name"].dropna().unique())
 selected_agency = st.sidebar.selectbox("Filter by Agency (optional)", ["All"] + agencies)
 
-# === Apply Filters ===
+# === Filter Data Based on View ===
 if view_mode == "City":
     avail_data = available_df[available_df["Location Name"] == selected_city]
     align_data = alignment_df[alignment_df["Location Name"] == selected_city]
@@ -68,14 +69,14 @@ if selected_agency != "All":
     layoff_data = layoff_data[layoff_data["Agency"] == selected_agency]
     fed_data = fed_data[fed_data["Agency Name"] == selected_agency]
 
-# === Header ===
+# === HEADER ===
 st.markdown("""
     <h1 style='text-align: center; color: white; background-color: #003366; padding: 25px; border-radius: 8px'>
     🏛️ Federal Workforce and Skill Availability Dashboard
     </h1>
 """, unsafe_allow_html=True)
 
-# === Summary Metrics ===
+# === KPI Metrics ===
 st.markdown(f"### 📌 Summary Overview — {label_title}")
 col1, col2, col3 = st.columns(3)
 
