@@ -6,17 +6,6 @@ import plotly.express as px
 # Define relative data path
 DATA_PATH = "data"
 
-# Show absolute path for debugging
-absolute_path = os.path.abspath(DATA_PATH)
-st.markdown(f"📁 **Absolute Data Path:** `{absolute_path}`")
-
-try:
-    file_list = os.listdir(DATA_PATH)
-    st.success("✅ Files in /data folder:")
-    st.json(file_list)
-except Exception as e:
-    st.warning(f"Couldn't list files in data/: {e}")
-
 # Function to load CSVs safely
 def load_csv(file_name):
     try:
