@@ -77,7 +77,7 @@ else:
     layoff_data = layoffs_df.copy()
     fed_data = fedscope_df.copy()
     decision_data = decision_df.copy()
-    label_title = "🇺🇸 US National View"
+    label_title = "US National View"
 
 if selected_agency != "All":
     layoff_data = layoff_data[layoff_data["Agency"] == selected_agency]
