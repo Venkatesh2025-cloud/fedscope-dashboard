@@ -3,53 +3,47 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-# === Hide Streamlit Branding & Footer ===
+# === Streamlit Page Config ===
+st.set_page_config(
+    page_title="Federal Workforce Dashboard",
+    layout="wide",  # ✅ Wide layout
+    initial_sidebar_state="expanded"
+)
+
+# === Custom CSS to force light theme and remove bottom badge ===
 st.markdown("""
     <style>
-        #MainMenu {visibility: hidden;}
-        footer {visibility: hidden;}
-        header {visibility: hidden;}
-        .css-164nlkn {display: none;}  /* Streamlit badge */
-        .css-zq5wmm.ezrtsby0 {display: none;}  /* GitHub Creator */
+    body { color: black; background-color: white; }
+    footer {visibility: hidden;}
+    #MainMenu {visibility: hidden;}
+    .viewerBadge_container__1QSob {display: none;}
     </style>
 """, unsafe_allow_html=True)
 
-# === Data Directory Path ===
+# === DATA FOLDER SETUP ===
 DATA_PATH = "data"
-st.markdown(f"📁 **Absolute Data Path:** `/{os.path.abspath(DATA_PATH)}`")
 
-# Debug listing
-try:
-    files = os.listdir(DATA_PATH)
-    st.success("✅ Files in /data folder:")
-    st.json(files)
-except Exception as e:
-    st.warning(f"⚠️ Couldn't list files in `data/`: {e}")
-
-# === Load CSV Helper ===
-def load_csv(file_name, label):
-    path = os.path.join(DATA_PATH, file_name)
+# Function to load CSVs safely
+def load_csv(file_name):
     try:
-        return pd.read_csv(path)
-    except FileNotFoundError:
-        st.error(f"❌ Error: `{file_name}` not found in the data directory.")
-        return None
+        return pd.read_csv(os.path.join(DATA_PATH, file_name))
     except Exception as e:
-        st.error(f"⚠️ Failed to load {label} — {e}")
+        st.error(f"⚠️ Error loading {file_name}: {e}")
         return None
 
-# === Load All Files ===
+# Load all CSVs
 dfs = {
-    "available_df": load_csv("city_skill_Available_Talent_projection.csv", "Available Talent"),
-    "alignment_df": load_csv("city_skill_demand_alignment_live.csv", "Demand Alignment"),
-    "decision_df": load_csv("city_skill_decision_table.csv", "Decision Table"),
-    "layoffs_df": load_csv("federal_layoff_news_with_categories.csv", "Layoff News"),
-    "fedscope_df": load_csv("fedscope_enriched_summary.csv", "Fedscope Summary")
+    "available_df": load_csv("city_skill_Available_Talent_projection.csv"),
+    "alignment_df": load_csv("city_skill_demand_alignment_live.csv"),
+    "decision_df": load_csv("city_skill_decision_table.csv"),
+    "layoffs_df": load_csv("federal_layoff_news_with_categories.csv"),
+    "fedscope_df": load_csv("fedscope_enriched_summary.csv"),
 }
 
-# Stop if any data file is missing
-if any(v is None for v in dfs.values()):
+# Stop if any file failed to load
+if any(df is None for df in dfs.values()):
     st.stop()
+
 
 # Unpack DataFrames
 available_df = dfs["available_df"]
