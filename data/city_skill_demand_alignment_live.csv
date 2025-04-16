@@ -1,0 +1,562 @@
+Location Name,Skill Category,Available Talent,Job Demand,Demand-to-Supply Ratio,Skill Gap,Alignment
+Alabama,Administrative & Clerical,3439,25,0.007269132,3414,Surplus
+Alabama,Cybersecurity,265,0,0,265,Surplus
+Alabama,Data & Analysis,189,2,0.010604454,187,Surplus
+Alabama,Education & Training,581,10,0.017220596,571,Surplus
+Alabama,Engineering & Technical Ops,5723,6,0.001048328,5717,Surplus
+Alabama,HR & Workforce Services,462,4,0.008650519,458,Surplus
+Alabama,Healthcare & Medical,2991,7,0.002340589,2984,Surplus
+Alabama,"Legal, Regulatory & Policy",555,4,0.007208506,551,Surplus
+Alabama,Other / Specialized,1589,5,0.003146435,1584,Surplus
+Alabama,Procurement & Contracting,2565,3,0.001169773,2562,Surplus
+Alabama,Project & Program Mgmt,2035,5,0.002457123,2030,Surplus
+Alaska,Administrative & Clerical,995,25,0.025120579,970,Surplus
+Alaska,Cybersecurity,48,0,0,48,Surplus
+Alaska,Data & Analysis,22,2,0.091324201,20,Surplus
+Alaska,Education & Training,95,18,0.188679245,77,Surplus
+Alaska,Engineering & Technical Ops,2210,7,0.003167134,2203,Surplus
+Alaska,HR & Workforce Services,105,25,0.23923445,80,Surplus
+Alaska,Healthcare & Medical,538,12,0.022313128,526,Surplus
+Alaska,"Legal, Regulatory & Policy",67,4,0.059701493,63,Surplus
+Alaska,Other / Specialized,770,6,0.00779322,764,Surplus
+Alaska,Procurement & Contracting,443,2,0.004515692,441,Surplus
+Alaska,Project & Program Mgmt,384,1,0.002607562,383,Surplus
+Arizona,Administrative & Clerical,2970,25,0.008418642,2945,Surplus
+Arizona,Cybersecurity,155,0,0,155,Surplus
+Arizona,Data & Analysis,70,6,0.086206897,64,Surplus
+Arizona,Education & Training,501,13,0.025932575,488,Surplus
+Arizona,Engineering & Technical Ops,3712,15,0.004041275,3697,Surplus
+Arizona,HR & Workforce Services,394,25,0.063451777,369,Surplus
+Arizona,Healthcare & Medical,5393,25,0.004635639,5368,Surplus
+Arizona,"Legal, Regulatory & Policy",475,19,0.04,456,Surplus
+Arizona,Other / Specialized,1441,17,0.011798182,1424,Surplus
+Arizona,Procurement & Contracting,894,6,0.006708408,888,Surplus
+Arizona,Project & Program Mgmt,1096,15,0.01368738,1081,Surplus
+Arkansas,Administrative & Clerical,1143,25,0.021878008,1118,Surplus
+Arkansas,Cybersecurity,47,0,0,47,Surplus
+Arkansas,Data & Analysis,26,2,0.078125,24,Surplus
+Arkansas,Education & Training,103,9,0.087719298,94,Surplus
+Arkansas,Engineering & Technical Ops,1595,9,0.005642633,1586,Surplus
+Arkansas,HR & Workforce Services,182,12,0.066042928,170,Surplus
+Arkansas,Healthcare & Medical,2498,10,0.004003523,2488,Surplus
+Arkansas,"Legal, Regulatory & Policy",174,2,0.011520737,172,Surplus
+Arkansas,Other / Specialized,708,3,0.004238485,705,Surplus
+Arkansas,Procurement & Contracting,338,2,0.005920663,336,Surplus
+Arkansas,Project & Program Mgmt,328,2,0.006091989,326,Surplus
+California,Administrative & Clerical,13969,25,0.001789626,13944,Surplus
+California,Cybersecurity,1401,5,0.003569134,1396,Surplus
+California,Data & Analysis,592,6,0.010131712,586,Surplus
+California,Education & Training,1574,25,0.015888147,1549,Surplus
+California,Engineering & Technical Ops,20014,18,0.000899357,19996,Surplus
+California,HR & Workforce Services,1497,25,0.016698951,1472,Surplus
+California,Healthcare & Medical,15194,25,0.001645343,15169,Surplus
+California,"Legal, Regulatory & Policy",1864,25,0.013411298,1839,Surplus
+California,Other / Specialized,7667,25,0.00326077,7642,Surplus
+California,Procurement & Contracting,4766,12,0.002517676,4754,Surplus
+California,Project & Program Mgmt,5757,25,0.004342766,5732,Surplus
+Colorado,Administrative & Clerical,3928,25,0.006365372,3903,Surplus
+Colorado,Cybersecurity,237,1,0.0042123,236,Surplus
+Colorado,Data & Analysis,225,5,0.022222222,220,Surplus
+Colorado,Education & Training,445,12,0.026978417,433,Surplus
+Colorado,Engineering & Technical Ops,5016,10,0.001993541,5006,Surplus
+Colorado,HR & Workforce Services,570,25,0.043875044,545,Surplus
+Colorado,Healthcare & Medical,3278,25,0.007626369,3253,Surplus
+Colorado,"Legal, Regulatory & Policy",434,24,0.055312284,410,Surplus
+Colorado,Other / Specialized,2443,12,0.004912999,2431,Surplus
+Colorado,Procurement & Contracting,1421,3,0.002110595,1418,Surplus
+Colorado,Project & Program Mgmt,2206,11,0.004986401,2195,Surplus
+Connecticut,Administrative & Clerical,563,25,0.044420753,538,Surplus
+Connecticut,Cybersecurity,18,0,0,18,Surplus
+Connecticut,Data & Analysis,25,0,0,25,Surplus
+Connecticut,Education & Training,51,5,0.098231827,46,Surplus
+Connecticut,Engineering & Technical Ops,674,7,0.010385757,667,Surplus
+Connecticut,HR & Workforce Services,75,13,0.173564753,62,Surplus
+Connecticut,Healthcare & Medical,1362,7,0.005140633,1355,Surplus
+Connecticut,"Legal, Regulatory & Policy",125,9,0.072,116,Surplus
+Connecticut,Other / Specialized,326,3,0.009199632,323,Surplus
+Connecticut,Procurement & Contracting,286,2,0.00700035,284,Surplus
+Connecticut,Project & Program Mgmt,230,3,0.013049152,227,Surplus
+Delaware,Administrative & Clerical,354,25,0.070701357,329,Surplus
+Delaware,Cybersecurity,15,0,0,15,Surplus
+Delaware,Data & Analysis,5,2,0.416666667,3,Surplus
+Delaware,Education & Training,28,4,0.14084507,24,Surplus
+Delaware,Engineering & Technical Ops,364,6,0.01650619,358,Surplus
+Delaware,HR & Workforce Services,61,4,0.06557377,57,Surplus
+Delaware,Healthcare & Medical,591,3,0.005076142,588,Surplus
+Delaware,"Legal, Regulatory & Policy",57,1,0.017699115,56,Surplus
+Delaware,Other / Specialized,218,4,0.018331806,214,Surplus
+Delaware,Procurement & Contracting,130,2,0.01537279,128,Surplus
+Delaware,Project & Program Mgmt,121,1,0.008271299,120,Surplus
+District Of Columbia,Administrative & Clerical,15304,25,0.001633592,15279,Surplus
+District Of Columbia,Cybersecurity,1480,11,0.007432432,1469,Surplus
+District Of Columbia,Data & Analysis,4916,12,0.002441108,4904,Surplus
+District Of Columbia,Education & Training,950,11,0.011585045,939,Surplus
+District Of Columbia,Engineering & Technical Ops,6820,11,0.001612951,6809,Surplus
+District Of Columbia,HR & Workforce Services,2115,25,0.011822567,2090,Surplus
+District Of Columbia,Healthcare & Medical,2015,17,0.008438819,1998,Surplus
+District Of Columbia,"Legal, Regulatory & Policy",5898,25,0.004238941,5873,Surplus
+District Of Columbia,Other / Specialized,21766,25,0.001148607,21741,Surplus
+District Of Columbia,Procurement & Contracting,3456,14,0.004051395,3442,Surplus
+District Of Columbia,Project & Program Mgmt,16381,19,0.001159895,16362,Surplus
+Florida,Administrative & Clerical,8217,25,0.003042473,8192,Surplus
+Florida,Cybersecurity,619,2,0.00323154,617,Surplus
+Florida,Data & Analysis,312,5,0.016030779,307,Surplus
+Florida,Education & Training,658,16,0.024319805,642,Surplus
+Florida,Engineering & Technical Ops,9813,15,0.001528522,9798,Surplus
+Florida,HR & Workforce Services,1179,25,0.021199016,1154,Surplus
+Florida,Healthcare & Medical,13467,25,0.001856417,13442,Surplus
+Florida,"Legal, Regulatory & Policy",1309,19,0.014518224,1290,Surplus
+Florida,Other / Specialized,4254,10,0.002351005,4244,Surplus
+Florida,Procurement & Contracting,3207,7,0.002182453,3200,Surplus
+Florida,Project & Program Mgmt,3870,11,0.002842524,3859,Surplus
+Georgia,Administrative & Clerical,7289,25,0.003429779,7264,Surplus
+Georgia,Cybersecurity,554,1,0.001804077,553,Surplus
+Georgia,Data & Analysis,306,6,0.019601437,300,Surplus
+Georgia,Education & Training,1027,25,0.024352231,1002,Surplus
+Georgia,Engineering & Technical Ops,8862,13,0.001466987,8849,Surplus
+Georgia,HR & Workforce Services,1145,25,0.021830248,1120,Surplus
+Georgia,Healthcare & Medical,8574,20,0.002332552,8554,Surplus
+Georgia,"Legal, Regulatory & Policy",834,17,0.020381249,817,Surplus
+Georgia,Other / Specialized,4495,13,0.002892424,4482,Surplus
+Georgia,Procurement & Contracting,3265,7,0.002143885,3258,Surplus
+Georgia,Project & Program Mgmt,3602,10,0.002775927,3592,Surplus
+Hawaii,Administrative & Clerical,1988,25,0.012577351,1963,Surplus
+Hawaii,Cybersecurity,154,3,0.019493177,151,Surplus
+Hawaii,Data & Analysis,34,4,0.11627907,30,Surplus
+Hawaii,Education & Training,127,11,0.086410055,116,Surplus
+Hawaii,Engineering & Technical Ops,5214,7,0.001342436,5207,Surplus
+Hawaii,HR & Workforce Services,243,18,0.074074074,225,Surplus
+Hawaii,Healthcare & Medical,1523,4,0.00262674,1519,Surplus
+Hawaii,"Legal, Regulatory & Policy",94,5,0.053418803,89,Surplus
+Hawaii,Other / Specialized,943,11,0.011664899,932,Surplus
+Hawaii,Procurement & Contracting,779,3,0.003852575,776,Surplus
+Hawaii,Project & Program Mgmt,1184,1,0.000844309,1183,Surplus
+Idaho,Administrative & Clerical,775,25,0.03227889,750,Surplus
+Idaho,Cybersecurity,32,0,0,32,Surplus
+Idaho,Data & Analysis,12,2,0.163934426,10,Surplus
+Idaho,Education & Training,57,8,0.14159292,49,Surplus
+Idaho,Engineering & Technical Ops,2191,6,0.002738726,2185,Surplus
+Idaho,HR & Workforce Services,122,6,0.049019608,116,Surplus
+Idaho,Healthcare & Medical,903,16,0.017718715,887,Surplus
+Idaho,"Legal, Regulatory & Policy",98,2,0.020429009,96,Surplus
+Idaho,Other / Specialized,442,6,0.013590034,436,Surplus
+Idaho,Procurement & Contracting,300,2,0.006666667,298,Surplus
+Idaho,Project & Program Mgmt,284,1,0.003521127,283,Surplus
+Illinois,Administrative & Clerical,4215,25,0.005930917,4190,Surplus
+Illinois,Cybersecurity,149,1,0.006734007,148,Surplus
+Illinois,Data & Analysis,224,15,0.06705409,209,Surplus
+Illinois,Education & Training,214,11,0.051522248,203,Surplus
+Illinois,Engineering & Technical Ops,3867,17,0.004395718,3850,Surplus
+Illinois,HR & Workforce Services,814,25,0.030731407,789,Surplus
+Illinois,Healthcare & Medical,5587,25,0.004474753,5562,Surplus
+Illinois,"Legal, Regulatory & Policy",671,18,0.026837632,653,Surplus
+Illinois,Other / Specialized,2499,17,0.006802449,2482,Surplus
+Illinois,Procurement & Contracting,2234,8,0.003581502,2226,Surplus
+Illinois,Project & Program Mgmt,1918,19,0.009904087,1899,Surplus
+Indiana,Administrative & Clerical,3312,25,0.007549221,3287,Surplus
+Indiana,Cybersecurity,126,0,0,126,Surplus
+Indiana,Data & Analysis,305,8,0.026238111,297,Surplus
+Indiana,Education & Training,72,7,0.09762901,65,Surplus
+Indiana,Engineering & Technical Ops,2746,11,0.004005535,2735,Surplus
+Indiana,HR & Workforce Services,423,21,0.049621928,402,Surplus
+Indiana,Healthcare & Medical,2628,14,0.005328056,2614,Surplus
+Indiana,"Legal, Regulatory & Policy",256,14,0.054623488,242,Surplus
+Indiana,Other / Specialized,697,7,0.010040161,690,Surplus
+Indiana,Procurement & Contracting,720,3,0.004167824,717,Surplus
+Indiana,Project & Program Mgmt,1002,17,0.016972843,985,Surplus
+Iowa,Administrative & Clerical,722,25,0.034640432,697,Surplus
+Iowa,Cybersecurity,17,0,0,17,Surplus
+Iowa,Data & Analysis,24,0,0,24,Surplus
+Iowa,Education & Training,25,4,0.15936255,21,Surplus
+Iowa,Engineering & Technical Ops,946,5,0.005287648,941,Surplus
+Iowa,HR & Workforce Services,229,13,0.05674378,216,Surplus
+Iowa,Healthcare & Medical,1837,12,0.006530968,1825,Surplus
+Iowa,"Legal, Regulatory & Policy",131,1,0.00764526,130,Surplus
+Iowa,Other / Specialized,449,1,0.002229654,448,Surplus
+Iowa,Procurement & Contracting,283,0,0,283,Surplus
+Iowa,Project & Program Mgmt,243,4,0.016454134,239,Surplus
+Kansas,Administrative & Clerical,1975,25,0.012656946,1950,Surplus
+Kansas,Cybersecurity,59,0,0,59,Surplus
+Kansas,Data & Analysis,91,3,0.033149171,88,Surplus
+Kansas,Education & Training,364,9,0.024759285,355,Surplus
+Kansas,Engineering & Technical Ops,1707,6,0.003514938,1701,Surplus
+Kansas,HR & Workforce Services,479,17,0.035498016,462,Surplus
+Kansas,Healthcare & Medical,2084,20,0.009598311,2064,Surplus
+Kansas,"Legal, Regulatory & Policy",118,5,0.042337003,113,Surplus
+Kansas,Other / Specialized,809,2,0.002473717,807,Surplus
+Kansas,Procurement & Contracting,509,1,0.001965409,508,Surplus
+Kansas,Project & Program Mgmt,726,1,0.001377221,725,Surplus
+Kentucky,Administrative & Clerical,2811,25,0.008892367,2786,Surplus
+Kentucky,Cybersecurity,76,0,0,76,Surplus
+Kentucky,Data & Analysis,66,6,0.090634441,60,Surplus
+Kentucky,Education & Training,465,9,0.01934236,456,Surplus
+Kentucky,Engineering & Technical Ops,1856,6,0.00323241,1850,Surplus
+Kentucky,HR & Workforce Services,757,6,0.007922884,751,Surplus
+Kentucky,Healthcare & Medical,2562,16,0.006245121,2546,Surplus
+Kentucky,"Legal, Regulatory & Policy",336,2,0.0059577,334,Surplus
+Kentucky,Other / Specialized,1287,2,0.001553639,1285,Surplus
+Kentucky,Procurement & Contracting,573,3,0.005240175,570,Surplus
+Kentucky,Project & Program Mgmt,801,8,0.009985022,793,Surplus
+Louisiana,Administrative & Clerical,1822,25,0.013724199,1797,Surplus
+Louisiana,Cybersecurity,111,0,0,111,Surplus
+Louisiana,Data & Analysis,47,4,0.084745763,43,Surplus
+Louisiana,Education & Training,82,11,0.133982948,71,Surplus
+Louisiana,Engineering & Technical Ops,2157,9,0.004171882,2148,Surplus
+Louisiana,HR & Workforce Services,277,19,0.068691251,258,Surplus
+Louisiana,Healthcare & Medical,2479,25,0.010085525,2454,Surplus
+Louisiana,"Legal, Regulatory & Policy",238,15,0.063078217,223,Surplus
+Louisiana,Other / Specialized,1037,7,0.006752194,1030,Surplus
+Louisiana,Procurement & Contracting,582,4,0.006877579,578,Surplus
+Louisiana,Project & Program Mgmt,880,10,0.011363636,870,Surplus
+Maine,Administrative & Clerical,800,25,0.031234383,775,Surplus
+Maine,Cybersecurity,27,0,0,27,Surplus
+Maine,Data & Analysis,9,0,0,9,Surplus
+Maine,Education & Training,90,6,0.066445183,84,Surplus
+Maine,Engineering & Technical Ops,3271,8,0.002445586,3263,Surplus
+Maine,HR & Workforce Services,75,18,0.241610738,57,Surplus
+Maine,Healthcare & Medical,833,14,0.016816817,819,Surplus
+Maine,"Legal, Regulatory & Policy",166,1,0.006027728,165,Surplus
+Maine,Other / Specialized,314,5,0.015933716,309,Surplus
+Maine,Procurement & Contracting,265,1,0.003767898,264,Surplus
+Maine,Project & Program Mgmt,332,8,0.02408913,324,Surplus
+Maryland,Administrative & Clerical,11432,25,0.002186882,11407,Surplus
+Maryland,Cybersecurity,2065,2,0.000968664,2063,Surplus
+Maryland,Data & Analysis,2486,2,0.000804408,2484,Surplus
+Maryland,Education & Training,908,11,0.012119877,897,Surplus
+Maryland,Engineering & Technical Ops,14893,12,0.000805731,14881,Surplus
+Maryland,HR & Workforce Services,1733,25,0.014426684,1708,Surplus
+Maryland,Healthcare & Medical,11262,25,0.002219933,11237,Surplus
+Maryland,"Legal, Regulatory & Policy",1495,12,0.00802783,1483,Surplus
+Maryland,Other / Specialized,5579,9,0.00161325,5570,Surplus
+Maryland,Procurement & Contracting,4737,6,0.001266731,4731,Surplus
+Maryland,Project & Program Mgmt,15061,6,0.000398385,15055,Surplus
+Massachusetts,Administrative & Clerical,2371,25,0.010545853,2346,Surplus
+Massachusetts,Cybersecurity,149,1,0.006706908,148,Surplus
+Massachusetts,Data & Analysis,213,5,0.023496241,208,Surplus
+Massachusetts,Education & Training,81,12,0.148331273,69,Surplus
+Massachusetts,Engineering & Technical Ops,2348,7,0.002981896,2341,Surplus
+Massachusetts,HR & Workforce Services,281,25,0.088967972,256,Surplus
+Massachusetts,Healthcare & Medical,3216,25,0.00777339,3191,Surplus
+Massachusetts,"Legal, Regulatory & Policy",245,14,0.057259714,231,Surplus
+Massachusetts,Other / Specialized,2099,15,0.00714626,2084,Surplus
+Massachusetts,Procurement & Contracting,941,3,0.003188437,938,Surplus
+Massachusetts,Project & Program Mgmt,828,7,0.008452065,821,Surplus
+Michigan,Administrative & Clerical,2366,25,0.010566803,2341,Surplus
+Michigan,Cybersecurity,84,0,0,84,Surplus
+Michigan,Data & Analysis,97,8,0.082815735,89,Surplus
+Michigan,Education & Training,114,5,0.043782837,109,Surplus
+Michigan,Engineering & Technical Ops,2801,8,0.002856021,2793,Surplus
+Michigan,HR & Workforce Services,344,25,0.072674419,319,Surplus
+Michigan,Healthcare & Medical,4258,24,0.00563592,4234,Surplus
+Michigan,"Legal, Regulatory & Policy",501,12,0.023966447,489,Surplus
+Michigan,Other / Specialized,1191,9,0.007555406,1182,Surplus
+Michigan,Procurement & Contracting,1631,6,0.003679853,1625,Surplus
+Michigan,Project & Program Mgmt,1387,13,0.009370045,1374,Surplus
+Minnesota,Administrative & Clerical,1392,25,0.017962351,1367,Surplus
+Minnesota,Cybersecurity,58,0,0,58,Surplus
+Minnesota,Data & Analysis,62,8,0.129032258,54,Surplus
+Minnesota,Education & Training,62,6,0.096463023,56,Surplus
+Minnesota,Engineering & Technical Ops,1749,7,0.004002745,1742,Surplus
+Minnesota,HR & Workforce Services,328,25,0.076242757,303,Surplus
+Minnesota,Healthcare & Medical,3095,25,0.008077022,3070,Surplus
+Minnesota,"Legal, Regulatory & Policy",460,12,0.026109661,448,Surplus
+Minnesota,Other / Specialized,893,7,0.00784138,886,Surplus
+Minnesota,Procurement & Contracting,450,1,0.00222321,449,Surplus
+Minnesota,Project & Program Mgmt,458,17,0.03713412,441,Surplus
+Mississippi,Administrative & Clerical,1765,25,0.014163503,1740,Surplus
+Mississippi,Cybersecurity,191,0,0,191,Surplus
+Mississippi,Data & Analysis,44,5,0.112866817,39,Surplus
+Mississippi,Education & Training,308,10,0.032456994,298,Surplus
+Mississippi,Engineering & Technical Ops,2884,10,0.003467767,2874,Surplus
+Mississippi,HR & Workforce Services,363,8,0.022068966,355,Surplus
+Mississippi,Healthcare & Medical,1811,10,0.005521506,1801,Surplus
+Mississippi,"Legal, Regulatory & Policy",188,5,0.026624068,183,Surplus
+Mississippi,Other / Specialized,981,4,0.004078719,977,Surplus
+Mississippi,Procurement & Contracting,593,4,0.0067465,589,Surplus
+Mississippi,Project & Program Mgmt,605,4,0.006615944,601,Surplus
+Missouri,Administrative & Clerical,5372,25,0.004654107,5347,Surplus
+Missouri,Cybersecurity,91,0,0,91,Surplus
+Missouri,Data & Analysis,163,4,0.024524831,159,Surplus
+Missouri,Education & Training,357,9,0.025181869,348,Surplus
+Missouri,Engineering & Technical Ops,2568,11,0.004283823,2557,Surplus
+Missouri,HR & Workforce Services,473,25,0.052910053,448,Surplus
+Missouri,Healthcare & Medical,4218,24,0.00569044,4194,Surplus
+Missouri,"Legal, Regulatory & Policy",726,10,0.013779799,716,Surplus
+Missouri,Other / Specialized,2446,9,0.003679477,2437,Surplus
+Missouri,Procurement & Contracting,922,3,0.003252738,919,Surplus
+Missouri,Project & Program Mgmt,1307,9,0.006883892,1298,Surplus
+Montana,Administrative & Clerical,897,25,0.027873787,872,Surplus
+Montana,Cybersecurity,18,2,0.114285714,16,Surplus
+Montana,Data & Analysis,16,1,0.063694268,15,Surplus
+Montana,Education & Training,50,5,0.101010101,45,Surplus
+Montana,Engineering & Technical Ops,2146,6,0.002796421,2140,Surplus
+Montana,HR & Workforce Services,103,5,0.048543689,98,Surplus
+Montana,Healthcare & Medical,964,21,0.021788753,943,Surplus
+Montana,"Legal, Regulatory & Policy",84,8,0.095351609,76,Surplus
+Montana,Other / Specialized,568,7,0.012319606,561,Surplus
+Montana,Procurement & Contracting,280,2,0.007140307,278,Surplus
+Montana,Project & Program Mgmt,266,2,0.007513148,264,Surplus
+Nebraska,Administrative & Clerical,861,25,0.029036005,836,Surplus
+Nebraska,Cybersecurity,47,0,0,47,Surplus
+Nebraska,Data & Analysis,62,8,0.128824477,54,Surplus
+Nebraska,Education & Training,56,9,0.161290323,47,Surplus
+Nebraska,Engineering & Technical Ops,1167,11,0.009429919,1156,Surplus
+Nebraska,HR & Workforce Services,83,25,0.300480769,58,Surplus
+Nebraska,Healthcare & Medical,1238,25,0.020198756,1213,Surplus
+Nebraska,"Legal, Regulatory & Policy",206,10,0.048520136,196,Surplus
+Nebraska,Other / Specialized,503,4,0.007949126,499,Surplus
+Nebraska,Procurement & Contracting,348,2,0.005745475,346,Surplus
+Nebraska,Project & Program Mgmt,594,2,0.003368137,592,Surplus
+Nevada,Administrative & Clerical,1307,25,0.019121921,1282,Surplus
+Nevada,Cybersecurity,66,0,0,66,Surplus
+Nevada,Data & Analysis,19,4,0.212765957,15,Surplus
+Nevada,Education & Training,92,7,0.076004343,85,Surplus
+Nevada,Engineering & Technical Ops,1462,11,0.007526514,1451,Surplus
+Nevada,HR & Workforce Services,162,20,0.123228589,142,Surplus
+Nevada,Healthcare & Medical,2332,15,0.006433075,2317,Surplus
+Nevada,"Legal, Regulatory & Policy",182,10,0.055035773,172,Surplus
+Nevada,Other / Specialized,574,5,0.008706251,569,Surplus
+Nevada,Procurement & Contracting,327,3,0.009185548,324,Surplus
+Nevada,Project & Program Mgmt,387,4,0.010333247,383,Surplus
+New Hampshire,Administrative & Clerical,359,25,0.069599109,334,Surplus
+New Hampshire,Cybersecurity,21,0,0,21,Surplus
+New Hampshire,Data & Analysis,15,0,0,15,Surplus
+New Hampshire,Education & Training,23,2,0.088495575,21,Surplus
+New Hampshire,Engineering & Technical Ops,701,6,0.008564088,695,Surplus
+New Hampshire,HR & Workforce Services,71,11,0.154494382,60,Surplus
+New Hampshire,Healthcare & Medical,501,7,0.013963694,494,Surplus
+New Hampshire,"Legal, Regulatory & Policy",73,1,0.013642565,72,Surplus
+New Hampshire,Other / Specialized,411,2,0.004867364,409,Surplus
+New Hampshire,Procurement & Contracting,175,3,0.017142857,172,Surplus
+New Hampshire,Project & Program Mgmt,182,4,0.022038567,178,Surplus
+New Jersey,Administrative & Clerical,1848,25,0.013529603,1823,Surplus
+New Jersey,Cybersecurity,301,0,0,301,Surplus
+New Jersey,Data & Analysis,114,2,0.017497813,112,Surplus
+New Jersey,Education & Training,128,7,0.054815975,121,Surplus
+New Jersey,Engineering & Technical Ops,3472,10,0.002880433,3462,Surplus
+New Jersey,HR & Workforce Services,275,21,0.076363636,254,Surplus
+New Jersey,Healthcare & Medical,1541,20,0.012978585,1521,Surplus
+New Jersey,"Legal, Regulatory & Policy",290,11,0.037931034,279,Surplus
+New Jersey,Other / Specialized,1108,9,0.008122011,1099,Surplus
+New Jersey,Procurement & Contracting,1036,4,0.003862495,1032,Surplus
+New Jersey,Project & Program Mgmt,1165,3,0.002575549,1162,Surplus
+New Mexico,Administrative & Clerical,2312,25,0.010812681,2287,Surplus
+New Mexico,Cybersecurity,182,0,0,182,Surplus
+New Mexico,Data & Analysis,112,6,0.053571429,106,Surplus
+New Mexico,Education & Training,347,13,0.037485582,334,Surplus
+New Mexico,Engineering & Technical Ops,3031,8,0.002639306,3023,Surplus
+New Mexico,HR & Workforce Services,473,25,0.052865299,448,Surplus
+New Mexico,Healthcare & Medical,2420,25,0.010328871,2395,Surplus
+New Mexico,"Legal, Regulatory & Policy",160,10,0.062656642,150,Surplus
+New Mexico,Other / Specialized,895,10,0.011171936,885,Surplus
+New Mexico,Procurement & Contracting,646,3,0.004644682,643,Surplus
+New Mexico,Project & Program Mgmt,703,8,0.011384659,695,Surplus
+New York,Administrative & Clerical,7095,25,0.003523509,7070,Surplus
+New York,Cybersecurity,186,1,0.005382131,185,Surplus
+New York,Data & Analysis,210,10,0.047619048,200,Surplus
+New York,Education & Training,352,11,0.031241125,341,Surplus
+New York,Engineering & Technical Ops,4105,13,0.003166561,4092,Surplus
+New York,HR & Workforce Services,631,25,0.039600824,606,Surplus
+New York,Healthcare & Medical,6710,25,0.003725838,6685,Surplus
+New York,"Legal, Regulatory & Policy",1050,21,0.019994287,1029,Surplus
+New York,Other / Specialized,3758,19,0.005055881,3739,Surplus
+New York,Procurement & Contracting,1205,7,0.005807683,1198,Surplus
+New York,Project & Program Mgmt,1540,17,0.011039678,1523,Surplus
+North Carolina,Administrative & Clerical,4256,25,0.005874198,4231,Surplus
+North Carolina,Cybersecurity,175,0,0,175,Surplus
+North Carolina,Data & Analysis,125,2,0.016038492,123,Surplus
+North Carolina,Education & Training,1072,11,0.010265982,1061,Surplus
+North Carolina,Engineering & Technical Ops,5170,12,0.002321128,5158,Surplus
+North Carolina,HR & Workforce Services,756,25,0.033055666,731,Surplus
+North Carolina,Healthcare & Medical,7699,25,0.003247133,7674,Surplus
+North Carolina,"Legal, Regulatory & Policy",778,13,0.016703071,765,Surplus
+North Carolina,Other / Specialized,2108,3,0.001423082,2105,Surplus
+North Carolina,Procurement & Contracting,1522,3,0.001971091,1519,Surplus
+North Carolina,Project & Program Mgmt,1811,3,0.001657001,1808,Surplus
+North Dakota,Administrative & Clerical,465,25,0.053728777,440,Surplus
+North Dakota,Cybersecurity,26,0,0,26,Surplus
+North Dakota,Data & Analysis,5,2,0.37037037,3,Surplus
+North Dakota,Education & Training,132,6,0.045385779,126,Surplus
+North Dakota,Engineering & Technical Ops,817,6,0.007340347,811,Surplus
+North Dakota,HR & Workforce Services,49,18,0.371134021,31,Surplus
+North Dakota,Healthcare & Medical,734,18,0.024529845,716,Surplus
+North Dakota,"Legal, Regulatory & Policy",52,3,0.058252427,49,Surplus
+North Dakota,Other / Specialized,269,8,0.029772981,261,Surplus
+North Dakota,Procurement & Contracting,165,2,0.012099214,163,Surplus
+North Dakota,Project & Program Mgmt,128,4,0.031298905,124,Surplus
+Ohio,Administrative & Clerical,6028,25,0.004147519,6003,Surplus
+Ohio,Cybersecurity,361,1,0.002767017,360,Surplus
+Ohio,Data & Analysis,248,10,0.040306328,238,Surplus
+Ohio,Education & Training,283,9,0.031824611,274,Surplus
+Ohio,Engineering & Technical Ops,5416,9,0.001661712,5407,Surplus
+Ohio,HR & Workforce Services,847,19,0.022434762,828,Surplus
+Ohio,Healthcare & Medical,6375,25,0.003921692,6350,Surplus
+Ohio,"Legal, Regulatory & Policy",645,11,0.01705162,634,Surplus
+Ohio,Other / Specialized,2530,6,0.002371823,2524,Surplus
+Ohio,Procurement & Contracting,2872,6,0.002089282,2866,Surplus
+Ohio,Project & Program Mgmt,2136,7,0.003277767,2129,Surplus
+Oklahoma,Administrative & Clerical,2994,25,0.008350312,2969,Surplus
+Oklahoma,Cybersecurity,330,0,0,330,Surplus
+Oklahoma,Data & Analysis,76,5,0.065703022,71,Surplus
+Oklahoma,Education & Training,393,14,0.03560529,379,Surplus
+Oklahoma,Engineering & Technical Ops,7556,10,0.001323452,7546,Surplus
+Oklahoma,HR & Workforce Services,390,18,0.046165684,372,Surplus
+Oklahoma,Healthcare & Medical,3113,25,0.008031612,3088,Surplus
+Oklahoma,"Legal, Regulatory & Policy",776,3,0.003865481,773,Surplus
+Oklahoma,Other / Specialized,1116,8,0.007171029,1108,Surplus
+Oklahoma,Procurement & Contracting,2094,8,0.003821169,2086,Surplus
+Oklahoma,Project & Program Mgmt,2129,14,0.006574622,2115,Surplus
+Oregon,Administrative & Clerical,1547,25,0.016156133,1522,Surplus
+Oregon,Cybersecurity,37,0,0,37,Surplus
+Oregon,Data & Analysis,97,1,0.010362694,96,Surplus
+Oregon,Education & Training,90,8,0.088691796,82,Surplus
+Oregon,Engineering & Technical Ops,3405,3,0.000880954,3402,Surplus
+Oregon,HR & Workforce Services,209,24,0.114887506,185,Surplus
+Oregon,Healthcare & Medical,2289,25,0.010920369,2264,Surplus
+Oregon,"Legal, Regulatory & Policy",191,11,0.057651992,180,Surplus
+Oregon,Other / Specialized,1272,6,0.004718094,1266,Surplus
+Oregon,Procurement & Contracting,413,0,0,413,Surplus
+Oregon,Project & Program Mgmt,577,9,0.015600624,568,Surplus
+Pennsylvania,Administrative & Clerical,7866,25,0.003178114,7841,Surplus
+Pennsylvania,Cybersecurity,393,4,0.01017294,389,Surplus
+Pennsylvania,Data & Analysis,196,8,0.040816327,188,Surplus
+Pennsylvania,Education & Training,201,13,0.064612326,188,Surplus
+Pennsylvania,Engineering & Technical Ops,6224,14,0.002249538,6210,Surplus
+Pennsylvania,HR & Workforce Services,928,25,0.026930949,903,Surplus
+Pennsylvania,Healthcare & Medical,6387,24,0.003757927,6363,Surplus
+Pennsylvania,"Legal, Regulatory & Policy",1141,11,0.009640666,1130,Surplus
+Pennsylvania,Other / Specialized,3233,5,0.001546599,3228,Surplus
+Pennsylvania,Procurement & Contracting,3563,7,0.001964471,3556,Surplus
+Pennsylvania,Project & Program Mgmt,2901,15,0.005170274,2886,Surplus
+Rhode Island,Administrative & Clerical,454,25,0.055066079,429,Surplus
+Rhode Island,Cybersecurity,264,0,0,264,Surplus
+Rhode Island,Data & Analysis,65,0,0,65,Surplus
+Rhode Island,Education & Training,210,2,0.009537434,208,Surplus
+Rhode Island,Engineering & Technical Ops,1461,6,0.004105933,1455,Surplus
+Rhode Island,HR & Workforce Services,69,12,0.173410405,57,Surplus
+Rhode Island,Healthcare & Medical,732,6,0.008202324,726,Surplus
+Rhode Island,"Legal, Regulatory & Policy",202,3,0.014880952,199,Surplus
+Rhode Island,Other / Specialized,257,0,0,257,Surplus
+Rhode Island,Procurement & Contracting,208,2,0.009596929,206,Surplus
+Rhode Island,Project & Program Mgmt,304,4,0.013153568,300,Surplus
+South Carolina,Administrative & Clerical,2136,25,0.011704668,2111,Surplus
+South Carolina,Cybersecurity,309,0,0,309,Surplus
+South Carolina,Data & Analysis,81,2,0.024660912,79,Surplus
+South Carolina,Education & Training,280,11,0.039285714,269,Surplus
+South Carolina,Engineering & Technical Ops,2339,9,0.003847634,2330,Surplus
+South Carolina,HR & Workforce Services,419,12,0.028625954,407,Surplus
+South Carolina,Healthcare & Medical,3116,5,0.001604621,3111,Surplus
+South Carolina,"Legal, Regulatory & Policy",475,3,0.00631845,472,Surplus
+South Carolina,Other / Specialized,1058,6,0.005670542,1052,Surplus
+South Carolina,Procurement & Contracting,846,3,0.003546099,843,Surplus
+South Carolina,Project & Program Mgmt,1167,3,0.002571355,1164,Surplus
+South Dakota,Administrative & Clerical,816,25,0.030633501,791,Surplus
+South Dakota,Cybersecurity,26,0,0,26,Surplus
+South Dakota,Data & Analysis,12,2,0.166666667,10,Surplus
+South Dakota,Education & Training,128,4,0.031274433,124,Surplus
+South Dakota,Engineering & Technical Ops,960,6,0.006253257,954,Surplus
+South Dakota,HR & Workforce Services,106,24,0.225776105,82,Surplus
+South Dakota,Healthcare & Medical,1446,25,0.017285487,1421,Surplus
+South Dakota,"Legal, Regulatory & Policy",86,6,0.069605568,80,Surplus
+South Dakota,Other / Specialized,390,0,0,390,Surplus
+South Dakota,Procurement & Contracting,252,2,0.007952286,250,Surplus
+South Dakota,Project & Program Mgmt,196,4,0.020439448,192,Surplus
+Tennessee,Administrative & Clerical,3879,25,0.006444628,3854,Surplus
+Tennessee,Cybersecurity,77,0,0,77,Surplus
+Tennessee,Data & Analysis,46,9,0.196078431,37,Surplus
+Tennessee,Education & Training,241,10,0.041476566,231,Surplus
+Tennessee,Engineering & Technical Ops,2114,10,0.00473104,2104,Surplus
+Tennessee,HR & Workforce Services,619,21,0.033931168,598,Surplus
+Tennessee,Healthcare & Medical,4928,25,0.005073155,4903,Surplus
+Tennessee,"Legal, Regulatory & Policy",583,12,0.020572604,571,Surplus
+Tennessee,Other / Specialized,1733,12,0.006926007,1721,Surplus
+Tennessee,Procurement & Contracting,814,9,0.01105787,805,Surplus
+Tennessee,Project & Program Mgmt,1109,11,0.009917951,1098,Surplus
+Texas,Administrative & Clerical,12774,25,0.001957116,12749,Surplus
+Texas,Cybersecurity,505,3,0.005945303,502,Surplus
+Texas,Data & Analysis,314,7,0.022271715,307,Surplus
+Texas,Education & Training,1468,25,0.017033454,1443,Surplus
+Texas,Engineering & Technical Ops,11482,15,0.00130637,11467,Surplus
+Texas,HR & Workforce Services,2541,25,0.009837485,2516,Surplus
+Texas,Healthcare & Medical,15726,25,0.001589764,15701,Surplus
+Texas,"Legal, Regulatory & Policy",1908,25,0.013104099,1883,Surplus
+Texas,Other / Specialized,7506,25,0.003330802,7481,Surplus
+Texas,Procurement & Contracting,4716,6,0.0012724,4710,Surplus
+Texas,Project & Program Mgmt,5604,13,0.002319772,5591,Surplus
+Utah,Administrative & Clerical,3342,25,0.007480774,3317,Surplus
+Utah,Cybersecurity,477,2,0.004191115,475,Surplus
+Utah,Data & Analysis,79,5,0.063371356,74,Surplus
+Utah,Education & Training,126,13,0.103503185,113,Surplus
+Utah,Engineering & Technical Ops,5257,13,0.002473034,5244,Surplus
+Utah,HR & Workforce Services,343,24,0.06993007,319,Surplus
+Utah,Healthcare & Medical,1341,16,0.011930505,1325,Surplus
+Utah,"Legal, Regulatory & Policy",355,10,0.028153153,345,Surplus
+Utah,Other / Specialized,2386,5,0.002095294,2381,Surplus
+Utah,Procurement & Contracting,1380,3,0.002173913,1377,Surplus
+Utah,Project & Program Mgmt,1638,11,0.006715917,1627,Surplus
+Vermont,Administrative & Clerical,337,15,0.044510386,322,Surplus
+Vermont,Cybersecurity,55,0,0,55,Surplus
+Vermont,Data & Analysis,5,0,0,5,Surplus
+Vermont,Education & Training,11,2,0.18018018,9,Surplus
+Vermont,Engineering & Technical Ops,248,4,0.016148567,244,Surplus
+Vermont,HR & Workforce Services,65,8,0.122511485,57,Surplus
+Vermont,Healthcare & Medical,496,8,0.016122531,488,Surplus
+Vermont,"Legal, Regulatory & Policy",24,1,0.040983607,23,Surplus
+Vermont,Other / Specialized,145,4,0.0276434,141,Surplus
+Vermont,Procurement & Contracting,99,0,0,99,Surplus
+Vermont,Project & Program Mgmt,170,1,0.005871991,169,Surplus
+Virginia,Administrative & Clerical,13773,25,0.001815211,13748,Surplus
+Virginia,Cybersecurity,1960,6,0.003060756,1954,Surplus
+Virginia,Data & Analysis,1322,15,0.011350738,1307,Surplus
+Virginia,Education & Training,1357,24,0.017686072,1333,Surplus
+Virginia,Engineering & Technical Ops,16987,21,0.001236218,16966,Surplus
+Virginia,HR & Workforce Services,2267,25,0.011029736,2242,Surplus
+Virginia,Healthcare & Medical,5882,25,0.004250544,5857,Surplus
+Virginia,"Legal, Regulatory & Policy",2503,22,0.008790858,2481,Surplus
+Virginia,Other / Specialized,6693,25,0.003735023,6668,Surplus
+Virginia,Procurement & Contracting,6673,12,0.001798319,6661,Surplus
+Virginia,Project & Program Mgmt,13120,12,0.00091462,13108,Surplus
+Washington,Administrative & Clerical,3956,25,0.006319834,3931,Surplus
+Washington,Cybersecurity,235,0,0,235,Surplus
+Washington,Data & Analysis,126,4,0.031720856,122,Surplus
+Washington,Education & Training,291,19,0.065381968,272,Surplus
+Washington,Engineering & Technical Ops,11810,18,0.001524145,11792,Surplus
+Washington,HR & Workforce Services,604,25,0.041390728,579,Surplus
+Washington,Healthcare & Medical,4783,25,0.005227282,4758,Surplus
+Washington,"Legal, Regulatory & Policy",571,23,0.040294324,548,Surplus
+Washington,Other / Specialized,2624,14,0.005334959,2610,Surplus
+Washington,Procurement & Contracting,1722,4,0.002323555,1718,Surplus
+Washington,Project & Program Mgmt,1954,15,0.00767774,1939,Surplus
+West Virginia,Administrative & Clerical,1788,25,0.013982885,1763,Surplus
+West Virginia,Cybersecurity,39,0,0,39,Surplus
+West Virginia,Data & Analysis,36,6,0.169014085,30,Surplus
+West Virginia,Education & Training,109,7,0.064338235,102,Surplus
+West Virginia,Engineering & Technical Ops,1382,4,0.002893937,1378,Surplus
+West Virginia,HR & Workforce Services,384,14,0.036429872,370,Surplus
+West Virginia,Healthcare & Medical,2395,20,0.008349336,2375,Surplus
+West Virginia,"Legal, Regulatory & Policy",267,1,0.003748126,266,Surplus
+West Virginia,Other / Specialized,663,0,0,663,Surplus
+West Virginia,Procurement & Contracting,406,3,0.007385524,403,Surplus
+West Virginia,Project & Program Mgmt,1140,7,0.006141428,1133,Surplus
+Wisconsin,Administrative & Clerical,1489,25,0.016795432,1464,Surplus
+Wisconsin,Cybersecurity,35,0,0,35,Surplus
+Wisconsin,Data & Analysis,34,6,0.17699115,28,Surplus
+Wisconsin,Education & Training,54,4,0.074349442,50,Surplus
+Wisconsin,Engineering & Technical Ops,1417,5,0.003528084,1412,Surplus
+Wisconsin,HR & Workforce Services,285,16,0.056100982,269,Surplus
+Wisconsin,Healthcare & Medical,3593,25,0.006957974,3568,Surplus
+Wisconsin,"Legal, Regulatory & Policy",421,5,0.011868028,416,Surplus
+Wisconsin,Other / Specialized,820,0,0,820,Surplus
+Wisconsin,Procurement & Contracting,434,0,0,434,Surplus
+Wisconsin,Project & Program Mgmt,369,9,0.024383636,360,Surplus
+Wyoming,Administrative & Clerical,545,25,0.04587156,520,Surplus
+Wyoming,Cybersecurity,13,1,0.07751938,12,Surplus
+Wyoming,Data & Analysis,6,4,0.64516129,2,Surplus
+Wyoming,Education & Training,42,7,0.166666667,35,Surplus
+Wyoming,Engineering & Technical Ops,1148,7,0.006100218,1141,Surplus
+Wyoming,HR & Workforce Services,68,18,0.264317181,50,Surplus
+Wyoming,Healthcare & Medical,719,13,0.018090732,706,Surplus
+Wyoming,"Legal, Regulatory & Policy",40,9,0.227272727,31,Surplus
+Wyoming,Other / Specialized,393,5,0.01271941,388,Surplus
+Wyoming,Procurement & Contracting,160,2,0.012515645,158,Surplus
+Wyoming,Project & Program Mgmt,142,2,0.014044944,140,Surplus

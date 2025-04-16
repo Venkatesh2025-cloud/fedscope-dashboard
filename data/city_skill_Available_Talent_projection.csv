@@ -1,0 +1,562 @@
+Location Name,Skill Category,Available Talent
+Alabama,Administrative & Clerical,3439
+Alabama,Cybersecurity,265
+Alabama,Data & Analysis,189
+Alabama,Education & Training,581
+Alabama,Engineering & Technical Ops,5723
+Alabama,HR & Workforce Services,462
+Alabama,Healthcare & Medical,2991
+Alabama,"Legal, Regulatory & Policy",555
+Alabama,Other / Specialized,1589
+Alabama,Procurement & Contracting,2565
+Alabama,Project & Program Mgmt,2035
+Alaska,Administrative & Clerical,995
+Alaska,Cybersecurity,48
+Alaska,Data & Analysis,22
+Alaska,Education & Training,95
+Alaska,Engineering & Technical Ops,2210
+Alaska,HR & Workforce Services,105
+Alaska,Healthcare & Medical,538
+Alaska,"Legal, Regulatory & Policy",67
+Alaska,Other / Specialized,770
+Alaska,Procurement & Contracting,443
+Alaska,Project & Program Mgmt,384
+Arizona,Administrative & Clerical,2970
+Arizona,Cybersecurity,155
+Arizona,Data & Analysis,70
+Arizona,Education & Training,501
+Arizona,Engineering & Technical Ops,3712
+Arizona,HR & Workforce Services,394
+Arizona,Healthcare & Medical,5393
+Arizona,"Legal, Regulatory & Policy",475
+Arizona,Other / Specialized,1441
+Arizona,Procurement & Contracting,894
+Arizona,Project & Program Mgmt,1096
+Arkansas,Administrative & Clerical,1143
+Arkansas,Cybersecurity,47
+Arkansas,Data & Analysis,26
+Arkansas,Education & Training,103
+Arkansas,Engineering & Technical Ops,1595
+Arkansas,HR & Workforce Services,182
+Arkansas,Healthcare & Medical,2498
+Arkansas,"Legal, Regulatory & Policy",174
+Arkansas,Other / Specialized,708
+Arkansas,Procurement & Contracting,338
+Arkansas,Project & Program Mgmt,328
+California,Administrative & Clerical,13969
+California,Cybersecurity,1401
+California,Data & Analysis,592
+California,Education & Training,1574
+California,Engineering & Technical Ops,20014
+California,HR & Workforce Services,1497
+California,Healthcare & Medical,15194
+California,"Legal, Regulatory & Policy",1864
+California,Other / Specialized,7667
+California,Procurement & Contracting,4766
+California,Project & Program Mgmt,5757
+Colorado,Administrative & Clerical,3928
+Colorado,Cybersecurity,237
+Colorado,Data & Analysis,225
+Colorado,Education & Training,445
+Colorado,Engineering & Technical Ops,5016
+Colorado,HR & Workforce Services,570
+Colorado,Healthcare & Medical,3278
+Colorado,"Legal, Regulatory & Policy",434
+Colorado,Other / Specialized,2443
+Colorado,Procurement & Contracting,1421
+Colorado,Project & Program Mgmt,2206
+Connecticut,Administrative & Clerical,563
+Connecticut,Cybersecurity,18
+Connecticut,Data & Analysis,25
+Connecticut,Education & Training,51
+Connecticut,Engineering & Technical Ops,674
+Connecticut,HR & Workforce Services,75
+Connecticut,Healthcare & Medical,1362
+Connecticut,"Legal, Regulatory & Policy",125
+Connecticut,Other / Specialized,326
+Connecticut,Procurement & Contracting,286
+Connecticut,Project & Program Mgmt,230
+Delaware,Administrative & Clerical,354
+Delaware,Cybersecurity,15
+Delaware,Data & Analysis,5
+Delaware,Education & Training,28
+Delaware,Engineering & Technical Ops,364
+Delaware,HR & Workforce Services,61
+Delaware,Healthcare & Medical,591
+Delaware,"Legal, Regulatory & Policy",57
+Delaware,Other / Specialized,218
+Delaware,Procurement & Contracting,130
+Delaware,Project & Program Mgmt,121
+District Of Columbia,Administrative & Clerical,15304
+District Of Columbia,Cybersecurity,1480
+District Of Columbia,Data & Analysis,4916
+District Of Columbia,Education & Training,950
+District Of Columbia,Engineering & Technical Ops,6820
+District Of Columbia,HR & Workforce Services,2115
+District Of Columbia,Healthcare & Medical,2015
+District Of Columbia,"Legal, Regulatory & Policy",5898
+District Of Columbia,Other / Specialized,21766
+District Of Columbia,Procurement & Contracting,3456
+District Of Columbia,Project & Program Mgmt,16381
+Florida,Administrative & Clerical,8217
+Florida,Cybersecurity,619
+Florida,Data & Analysis,312
+Florida,Education & Training,658
+Florida,Engineering & Technical Ops,9813
+Florida,HR & Workforce Services,1179
+Florida,Healthcare & Medical,13467
+Florida,"Legal, Regulatory & Policy",1309
+Florida,Other / Specialized,4254
+Florida,Procurement & Contracting,3207
+Florida,Project & Program Mgmt,3870
+Georgia,Administrative & Clerical,7289
+Georgia,Cybersecurity,554
+Georgia,Data & Analysis,306
+Georgia,Education & Training,1027
+Georgia,Engineering & Technical Ops,8862
+Georgia,HR & Workforce Services,1145
+Georgia,Healthcare & Medical,8574
+Georgia,"Legal, Regulatory & Policy",834
+Georgia,Other / Specialized,4495
+Georgia,Procurement & Contracting,3265
+Georgia,Project & Program Mgmt,3602
+Hawaii,Administrative & Clerical,1988
+Hawaii,Cybersecurity,154
+Hawaii,Data & Analysis,34
+Hawaii,Education & Training,127
+Hawaii,Engineering & Technical Ops,5214
+Hawaii,HR & Workforce Services,243
+Hawaii,Healthcare & Medical,1523
+Hawaii,"Legal, Regulatory & Policy",94
+Hawaii,Other / Specialized,943
+Hawaii,Procurement & Contracting,779
+Hawaii,Project & Program Mgmt,1184
+Idaho,Administrative & Clerical,775
+Idaho,Cybersecurity,32
+Idaho,Data & Analysis,12
+Idaho,Education & Training,57
+Idaho,Engineering & Technical Ops,2191
+Idaho,HR & Workforce Services,122
+Idaho,Healthcare & Medical,903
+Idaho,"Legal, Regulatory & Policy",98
+Idaho,Other / Specialized,442
+Idaho,Procurement & Contracting,300
+Idaho,Project & Program Mgmt,284
+Illinois,Administrative & Clerical,4215
+Illinois,Cybersecurity,149
+Illinois,Data & Analysis,224
+Illinois,Education & Training,214
+Illinois,Engineering & Technical Ops,3867
+Illinois,HR & Workforce Services,814
+Illinois,Healthcare & Medical,5587
+Illinois,"Legal, Regulatory & Policy",671
+Illinois,Other / Specialized,2499
+Illinois,Procurement & Contracting,2234
+Illinois,Project & Program Mgmt,1918
+Indiana,Administrative & Clerical,3312
+Indiana,Cybersecurity,126
+Indiana,Data & Analysis,305
+Indiana,Education & Training,72
+Indiana,Engineering & Technical Ops,2746
+Indiana,HR & Workforce Services,423
+Indiana,Healthcare & Medical,2628
+Indiana,"Legal, Regulatory & Policy",256
+Indiana,Other / Specialized,697
+Indiana,Procurement & Contracting,720
+Indiana,Project & Program Mgmt,1002
+Iowa,Administrative & Clerical,722
+Iowa,Cybersecurity,17
+Iowa,Data & Analysis,24
+Iowa,Education & Training,25
+Iowa,Engineering & Technical Ops,946
+Iowa,HR & Workforce Services,229
+Iowa,Healthcare & Medical,1837
+Iowa,"Legal, Regulatory & Policy",131
+Iowa,Other / Specialized,449
+Iowa,Procurement & Contracting,283
+Iowa,Project & Program Mgmt,243
+Kansas,Administrative & Clerical,1975
+Kansas,Cybersecurity,59
+Kansas,Data & Analysis,91
+Kansas,Education & Training,364
+Kansas,Engineering & Technical Ops,1707
+Kansas,HR & Workforce Services,479
+Kansas,Healthcare & Medical,2084
+Kansas,"Legal, Regulatory & Policy",118
+Kansas,Other / Specialized,809
+Kansas,Procurement & Contracting,509
+Kansas,Project & Program Mgmt,726
+Kentucky,Administrative & Clerical,2811
+Kentucky,Cybersecurity,76
+Kentucky,Data & Analysis,66
+Kentucky,Education & Training,465
+Kentucky,Engineering & Technical Ops,1856
+Kentucky,HR & Workforce Services,757
+Kentucky,Healthcare & Medical,2562
+Kentucky,"Legal, Regulatory & Policy",336
+Kentucky,Other / Specialized,1287
+Kentucky,Procurement & Contracting,573
+Kentucky,Project & Program Mgmt,801
+Louisiana,Administrative & Clerical,1822
+Louisiana,Cybersecurity,111
+Louisiana,Data & Analysis,47
+Louisiana,Education & Training,82
+Louisiana,Engineering & Technical Ops,2157
+Louisiana,HR & Workforce Services,277
+Louisiana,Healthcare & Medical,2479
+Louisiana,"Legal, Regulatory & Policy",238
+Louisiana,Other / Specialized,1037
+Louisiana,Procurement & Contracting,582
+Louisiana,Project & Program Mgmt,880
+Maine,Administrative & Clerical,800
+Maine,Cybersecurity,27
+Maine,Data & Analysis,9
+Maine,Education & Training,90
+Maine,Engineering & Technical Ops,3271
+Maine,HR & Workforce Services,75
+Maine,Healthcare & Medical,833
+Maine,"Legal, Regulatory & Policy",166
+Maine,Other / Specialized,314
+Maine,Procurement & Contracting,265
+Maine,Project & Program Mgmt,332
+Maryland,Administrative & Clerical,11432
+Maryland,Cybersecurity,2065
+Maryland,Data & Analysis,2486
+Maryland,Education & Training,908
+Maryland,Engineering & Technical Ops,14893
+Maryland,HR & Workforce Services,1733
+Maryland,Healthcare & Medical,11262
+Maryland,"Legal, Regulatory & Policy",1495
+Maryland,Other / Specialized,5579
+Maryland,Procurement & Contracting,4737
+Maryland,Project & Program Mgmt,15061
+Massachusetts,Administrative & Clerical,2371
+Massachusetts,Cybersecurity,149
+Massachusetts,Data & Analysis,213
+Massachusetts,Education & Training,81
+Massachusetts,Engineering & Technical Ops,2348
+Massachusetts,HR & Workforce Services,281
+Massachusetts,Healthcare & Medical,3216
+Massachusetts,"Legal, Regulatory & Policy",245
+Massachusetts,Other / Specialized,2099
+Massachusetts,Procurement & Contracting,941
+Massachusetts,Project & Program Mgmt,828
+Michigan,Administrative & Clerical,2366
+Michigan,Cybersecurity,84
+Michigan,Data & Analysis,97
+Michigan,Education & Training,114
+Michigan,Engineering & Technical Ops,2801
+Michigan,HR & Workforce Services,344
+Michigan,Healthcare & Medical,4258
+Michigan,"Legal, Regulatory & Policy",501
+Michigan,Other / Specialized,1191
+Michigan,Procurement & Contracting,1631
+Michigan,Project & Program Mgmt,1387
+Minnesota,Administrative & Clerical,1392
+Minnesota,Cybersecurity,58
+Minnesota,Data & Analysis,62
+Minnesota,Education & Training,62
+Minnesota,Engineering & Technical Ops,1749
+Minnesota,HR & Workforce Services,328
+Minnesota,Healthcare & Medical,3095
+Minnesota,"Legal, Regulatory & Policy",460
+Minnesota,Other / Specialized,893
+Minnesota,Procurement & Contracting,450
+Minnesota,Project & Program Mgmt,458
+Mississippi,Administrative & Clerical,1765
+Mississippi,Cybersecurity,191
+Mississippi,Data & Analysis,44
+Mississippi,Education & Training,308
+Mississippi,Engineering & Technical Ops,2884
+Mississippi,HR & Workforce Services,363
+Mississippi,Healthcare & Medical,1811
+Mississippi,"Legal, Regulatory & Policy",188
+Mississippi,Other / Specialized,981
+Mississippi,Procurement & Contracting,593
+Mississippi,Project & Program Mgmt,605
+Missouri,Administrative & Clerical,5372
+Missouri,Cybersecurity,91
+Missouri,Data & Analysis,163
+Missouri,Education & Training,357
+Missouri,Engineering & Technical Ops,2568
+Missouri,HR & Workforce Services,473
+Missouri,Healthcare & Medical,4218
+Missouri,"Legal, Regulatory & Policy",726
+Missouri,Other / Specialized,2446
+Missouri,Procurement & Contracting,922
+Missouri,Project & Program Mgmt,1307
+Montana,Administrative & Clerical,897
+Montana,Cybersecurity,18
+Montana,Data & Analysis,16
+Montana,Education & Training,50
+Montana,Engineering & Technical Ops,2146
+Montana,HR & Workforce Services,103
+Montana,Healthcare & Medical,964
+Montana,"Legal, Regulatory & Policy",84
+Montana,Other / Specialized,568
+Montana,Procurement & Contracting,280
+Montana,Project & Program Mgmt,266
+Nebraska,Administrative & Clerical,861
+Nebraska,Cybersecurity,47
+Nebraska,Data & Analysis,62
+Nebraska,Education & Training,56
+Nebraska,Engineering & Technical Ops,1167
+Nebraska,HR & Workforce Services,83
+Nebraska,Healthcare & Medical,1238
+Nebraska,"Legal, Regulatory & Policy",206
+Nebraska,Other / Specialized,503
+Nebraska,Procurement & Contracting,348
+Nebraska,Project & Program Mgmt,594
+Nevada,Administrative & Clerical,1307
+Nevada,Cybersecurity,66
+Nevada,Data & Analysis,19
+Nevada,Education & Training,92
+Nevada,Engineering & Technical Ops,1462
+Nevada,HR & Workforce Services,162
+Nevada,Healthcare & Medical,2332
+Nevada,"Legal, Regulatory & Policy",182
+Nevada,Other / Specialized,574
+Nevada,Procurement & Contracting,327
+Nevada,Project & Program Mgmt,387
+New Hampshire,Administrative & Clerical,359
+New Hampshire,Cybersecurity,21
+New Hampshire,Data & Analysis,15
+New Hampshire,Education & Training,23
+New Hampshire,Engineering & Technical Ops,701
+New Hampshire,HR & Workforce Services,71
+New Hampshire,Healthcare & Medical,501
+New Hampshire,"Legal, Regulatory & Policy",73
+New Hampshire,Other / Specialized,411
+New Hampshire,Procurement & Contracting,175
+New Hampshire,Project & Program Mgmt,182
+New Jersey,Administrative & Clerical,1848
+New Jersey,Cybersecurity,301
+New Jersey,Data & Analysis,114
+New Jersey,Education & Training,128
+New Jersey,Engineering & Technical Ops,3472
+New Jersey,HR & Workforce Services,275
+New Jersey,Healthcare & Medical,1541
+New Jersey,"Legal, Regulatory & Policy",290
+New Jersey,Other / Specialized,1108
+New Jersey,Procurement & Contracting,1036
+New Jersey,Project & Program Mgmt,1165
+New Mexico,Administrative & Clerical,2312
+New Mexico,Cybersecurity,182
+New Mexico,Data & Analysis,112
+New Mexico,Education & Training,347
+New Mexico,Engineering & Technical Ops,3031
+New Mexico,HR & Workforce Services,473
+New Mexico,Healthcare & Medical,2420
+New Mexico,"Legal, Regulatory & Policy",160
+New Mexico,Other / Specialized,895
+New Mexico,Procurement & Contracting,646
+New Mexico,Project & Program Mgmt,703
+New York,Administrative & Clerical,7095
+New York,Cybersecurity,186
+New York,Data & Analysis,210
+New York,Education & Training,352
+New York,Engineering & Technical Ops,4105
+New York,HR & Workforce Services,631
+New York,Healthcare & Medical,6710
+New York,"Legal, Regulatory & Policy",1050
+New York,Other / Specialized,3758
+New York,Procurement & Contracting,1205
+New York,Project & Program Mgmt,1540
+North Carolina,Administrative & Clerical,4256
+North Carolina,Cybersecurity,175
+North Carolina,Data & Analysis,125
+North Carolina,Education & Training,1072
+North Carolina,Engineering & Technical Ops,5170
+North Carolina,HR & Workforce Services,756
+North Carolina,Healthcare & Medical,7699
+North Carolina,"Legal, Regulatory & Policy",778
+North Carolina,Other / Specialized,2108
+North Carolina,Procurement & Contracting,1522
+North Carolina,Project & Program Mgmt,1811
+North Dakota,Administrative & Clerical,465
+North Dakota,Cybersecurity,26
+North Dakota,Data & Analysis,5
+North Dakota,Education & Training,132
+North Dakota,Engineering & Technical Ops,817
+North Dakota,HR & Workforce Services,49
+North Dakota,Healthcare & Medical,734
+North Dakota,"Legal, Regulatory & Policy",52
+North Dakota,Other / Specialized,269
+North Dakota,Procurement & Contracting,165
+North Dakota,Project & Program Mgmt,128
+Ohio,Administrative & Clerical,6028
+Ohio,Cybersecurity,361
+Ohio,Data & Analysis,248
+Ohio,Education & Training,283
+Ohio,Engineering & Technical Ops,5416
+Ohio,HR & Workforce Services,847
+Ohio,Healthcare & Medical,6375
+Ohio,"Legal, Regulatory & Policy",645
+Ohio,Other / Specialized,2530
+Ohio,Procurement & Contracting,2872
+Ohio,Project & Program Mgmt,2136
+Oklahoma,Administrative & Clerical,2994
+Oklahoma,Cybersecurity,330
+Oklahoma,Data & Analysis,76
+Oklahoma,Education & Training,393
+Oklahoma,Engineering & Technical Ops,7556
+Oklahoma,HR & Workforce Services,390
+Oklahoma,Healthcare & Medical,3113
+Oklahoma,"Legal, Regulatory & Policy",776
+Oklahoma,Other / Specialized,1116
+Oklahoma,Procurement & Contracting,2094
+Oklahoma,Project & Program Mgmt,2129
+Oregon,Administrative & Clerical,1547
+Oregon,Cybersecurity,37
+Oregon,Data & Analysis,97
+Oregon,Education & Training,90
+Oregon,Engineering & Technical Ops,3405
+Oregon,HR & Workforce Services,209
+Oregon,Healthcare & Medical,2289
+Oregon,"Legal, Regulatory & Policy",191
+Oregon,Other / Specialized,1272
+Oregon,Procurement & Contracting,413
+Oregon,Project & Program Mgmt,577
+Pennsylvania,Administrative & Clerical,7866
+Pennsylvania,Cybersecurity,393
+Pennsylvania,Data & Analysis,196
+Pennsylvania,Education & Training,201
+Pennsylvania,Engineering & Technical Ops,6224
+Pennsylvania,HR & Workforce Services,928
+Pennsylvania,Healthcare & Medical,6387
+Pennsylvania,"Legal, Regulatory & Policy",1141
+Pennsylvania,Other / Specialized,3233
+Pennsylvania,Procurement & Contracting,3563
+Pennsylvania,Project & Program Mgmt,2901
+Rhode Island,Administrative & Clerical,454
+Rhode Island,Cybersecurity,264
+Rhode Island,Data & Analysis,65
+Rhode Island,Education & Training,210
+Rhode Island,Engineering & Technical Ops,1461
+Rhode Island,HR & Workforce Services,69
+Rhode Island,Healthcare & Medical,732
+Rhode Island,"Legal, Regulatory & Policy",202
+Rhode Island,Other / Specialized,257
+Rhode Island,Procurement & Contracting,208
+Rhode Island,Project & Program Mgmt,304
+South Carolina,Administrative & Clerical,2136
+South Carolina,Cybersecurity,309
+South Carolina,Data & Analysis,81
+South Carolina,Education & Training,280
+South Carolina,Engineering & Technical Ops,2339
+South Carolina,HR & Workforce Services,419
+South Carolina,Healthcare & Medical,3116
+South Carolina,"Legal, Regulatory & Policy",475
+South Carolina,Other / Specialized,1058
+South Carolina,Procurement & Contracting,846
+South Carolina,Project & Program Mgmt,1167
+South Dakota,Administrative & Clerical,816
+South Dakota,Cybersecurity,26
+South Dakota,Data & Analysis,12
+South Dakota,Education & Training,128
+South Dakota,Engineering & Technical Ops,960
+South Dakota,HR & Workforce Services,106
+South Dakota,Healthcare & Medical,1446
+South Dakota,"Legal, Regulatory & Policy",86
+South Dakota,Other / Specialized,390
+South Dakota,Procurement & Contracting,252
+South Dakota,Project & Program Mgmt,196
+Tennessee,Administrative & Clerical,3879
+Tennessee,Cybersecurity,77
+Tennessee,Data & Analysis,46
+Tennessee,Education & Training,241
+Tennessee,Engineering & Technical Ops,2114
+Tennessee,HR & Workforce Services,619
+Tennessee,Healthcare & Medical,4928
+Tennessee,"Legal, Regulatory & Policy",583
+Tennessee,Other / Specialized,1733
+Tennessee,Procurement & Contracting,814
+Tennessee,Project & Program Mgmt,1109
+Texas,Administrative & Clerical,12774
+Texas,Cybersecurity,505
+Texas,Data & Analysis,314
+Texas,Education & Training,1468
+Texas,Engineering & Technical Ops,11482
+Texas,HR & Workforce Services,2541
+Texas,Healthcare & Medical,15726
+Texas,"Legal, Regulatory & Policy",1908
+Texas,Other / Specialized,7506
+Texas,Procurement & Contracting,4716
+Texas,Project & Program Mgmt,5604
+Utah,Administrative & Clerical,3342
+Utah,Cybersecurity,477
+Utah,Data & Analysis,79
+Utah,Education & Training,126
+Utah,Engineering & Technical Ops,5257
+Utah,HR & Workforce Services,343
+Utah,Healthcare & Medical,1341
+Utah,"Legal, Regulatory & Policy",355
+Utah,Other / Specialized,2386
+Utah,Procurement & Contracting,1380
+Utah,Project & Program Mgmt,1638
+Vermont,Administrative & Clerical,337
+Vermont,Cybersecurity,55
+Vermont,Data & Analysis,5
+Vermont,Education & Training,11
+Vermont,Engineering & Technical Ops,248
+Vermont,HR & Workforce Services,65
+Vermont,Healthcare & Medical,496
+Vermont,"Legal, Regulatory & Policy",24
+Vermont,Other / Specialized,145
+Vermont,Procurement & Contracting,99
+Vermont,Project & Program Mgmt,170
+Virginia,Administrative & Clerical,13773
+Virginia,Cybersecurity,1960
+Virginia,Data & Analysis,1322
+Virginia,Education & Training,1357
+Virginia,Engineering & Technical Ops,16987
+Virginia,HR & Workforce Services,2267
+Virginia,Healthcare & Medical,5882
+Virginia,"Legal, Regulatory & Policy",2503
+Virginia,Other / Specialized,6693
+Virginia,Procurement & Contracting,6673
+Virginia,Project & Program Mgmt,13120
+Washington,Administrative & Clerical,3956
+Washington,Cybersecurity,235
+Washington,Data & Analysis,126
+Washington,Education & Training,291
+Washington,Engineering & Technical Ops,11810
+Washington,HR & Workforce Services,604
+Washington,Healthcare & Medical,4783
+Washington,"Legal, Regulatory & Policy",571
+Washington,Other / Specialized,2624
+Washington,Procurement & Contracting,1722
+Washington,Project & Program Mgmt,1954
+West Virginia,Administrative & Clerical,1788
+West Virginia,Cybersecurity,39
+West Virginia,Data & Analysis,36
+West Virginia,Education & Training,109
+West Virginia,Engineering & Technical Ops,1382
+West Virginia,HR & Workforce Services,384
+West Virginia,Healthcare & Medical,2395
+West Virginia,"Legal, Regulatory & Policy",267
+West Virginia,Other / Specialized,663
+West Virginia,Procurement & Contracting,406
+West Virginia,Project & Program Mgmt,1140
+Wisconsin,Administrative & Clerical,1489
+Wisconsin,Cybersecurity,35
+Wisconsin,Data & Analysis,34
+Wisconsin,Education & Training,54
+Wisconsin,Engineering & Technical Ops,1417
+Wisconsin,HR & Workforce Services,285
+Wisconsin,Healthcare & Medical,3593
+Wisconsin,"Legal, Regulatory & Policy",421
+Wisconsin,Other / Specialized,820
+Wisconsin,Procurement & Contracting,434
+Wisconsin,Project & Program Mgmt,369
+Wyoming,Administrative & Clerical,545
+Wyoming,Cybersecurity,13
+Wyoming,Data & Analysis,6
+Wyoming,Education & Training,42
+Wyoming,Engineering & Technical Ops,1148
+Wyoming,HR & Workforce Services,68
+Wyoming,Healthcare & Medical,719
+Wyoming,"Legal, Regulatory & Policy",40
+Wyoming,Other / Specialized,393
+Wyoming,Procurement & Contracting,160
+Wyoming,Project & Program Mgmt,142
