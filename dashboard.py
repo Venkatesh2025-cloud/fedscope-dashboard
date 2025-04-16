@@ -2,14 +2,6 @@ import os
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-
-# === Streamlit Page Config ===
-st.set_page_config(
-    page_title="Federal Workforce Dashboard",
-    layout="wide",  # Wide layout
-    initial_sidebar_state="expanded"
-)
-
 # === CSS: Light Mode + Hide Badges + Reduce Padding ===
 st.markdown("""
     <style>
