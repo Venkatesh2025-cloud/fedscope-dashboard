@@ -2,16 +2,12 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import os
-import openai
+import openai  # works with openai==0.28
 
-# === Page Config ===
-st.set_page_config(
-    page_title="Federal Layoff Intelligence with AI",
-    layout="wide",
-    page_icon="📊"
-)
+# === Streamlit Config ===
+st.set_page_config(page_title="Federal Layoff Intelligence", layout="wide", page_icon="📊")
 
-# === Custom CSS for Styling ===
+# === Custom CSS ===
 st.markdown("""
     <style>
         html, body, [class*="css"] {
@@ -50,7 +46,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# === Load Data ===
+# === File Handling ===
 BASE_DIR = os.path.dirname(__file__)
 DATA_PATH = os.path.join(BASE_DIR, "data")
 
@@ -142,13 +138,12 @@ with tab3:
     else:
         st.info("No news found for this selection.")
 
-# === Tab 4: AI Assistant with Together.ai ===
+# === Tab 4: AI Assistant using Together.ai ===
 with tab4:
     st.subheader("🤖 AI Assistant (Together.ai)")
     if not decision_data.empty:
-        st.markdown("Fetching insights with Together.ai...")
+        st.markdown("Fetching insights from Together.ai...")
 
-        # Prepare prompt input
         top_data = decision_data.sort_values("Estimated Layoffs", ascending=False).head(10)
         csv_input = top_data.to_csv(index=False)
 
@@ -171,7 +166,7 @@ with tab4:
             st.success(ai_output)
 
         except Exception as e:
-            st.error("❌ AI Request failed. Check your Together.ai key or connection.")
+            st.error("❌ AI Request failed. Check Together.ai API access.")
             st.exception(e)
     else:
         st.warning("No data available to generate AI insights.")
