@@ -3,13 +3,43 @@ import pandas as pd
 import plotly.express as px
 import os
 
-st.set_page_config(page_title="Federal Layoff Intelligence", layout="wide")
+st.set_page_config(
+    page_title="Federal Layoff Intelligence Platform",
+    layout="wide",
+    page_icon="📊"
+)
+
+# === Styling ===
+st.markdown("""
+    <style>
+        .big-title {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #6c757d;
+            margin-top: -10px;
+            margin-bottom: 30px;
+        }
+        .kpi-card {
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            text-align: center;
+            border: 1px solid #dee2e6;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # === Paths ===
 BASE_DIR = os.path.dirname(__file__)
 DATA_PATH = os.path.join(BASE_DIR, "data")
 
-# === Load Data (with basic checks) ===
+# === Load Data ===
 def load_csv(file_name):
     path = os.path.join(DATA_PATH, file_name)
     if os.path.exists(path):
@@ -24,16 +54,20 @@ decision_df = load_csv("city_skill_decision_table.csv")
 layoffs_df = load_csv("federal_layoff_news_with_categories.csv")
 fedscope_df = load_csv("fedscope_enriched_summary.csv")
 
-# === Sidebar Filters ===
-st.sidebar.header("🧭 Filters")
+# === Sidebar ===
+with st.sidebar:
+    st.header("📍 Filters")
+    states = sorted(decision_df["City"].dropna().unique())
+    selected_state = st.selectbox("Select a State", states)
 
-states = sorted(decision_df["City"].dropna().unique())
-selected_state = st.sidebar.selectbox("Select a State", states)
+    agencies = sorted(fedscope_df["Agency Name"].dropna().unique())
+    selected_agency = st.selectbox("Filter by Agency", ["All"] + agencies)
 
-agencies = sorted(fedscope_df["Agency Name"].dropna().unique())
-selected_agency = st.sidebar.selectbox("Filter by Agency (optional)", ["All"] + agencies)
+    st.markdown("---")
+    st.caption("🔄 Data auto-refreshes every 24h")
+    st.caption("🧠 Powered by Streamlit + Plotly")
 
-# === Filtered Datasets ===
+# === Filter Datasets ===
 avail_data = available_df[available_df["Location Name"] == selected_state]
 decision_data = decision_df[decision_df["City"] == selected_state]
 layoff_data = layoffs_df[layoffs_df["Locations Impacted"].str.contains(selected_state, case=False, na=False)]
@@ -44,63 +78,78 @@ if selected_agency != "All":
     layoff_data = layoff_data[layoff_data["Agency"] == selected_agency]
 
 # === Header ===
-st.markdown(f"""
-<h1 style='text-align: center; background-color: #002b5c; color: white; padding: 20px; border-radius: 8px;'>
-📊 Federal Layoff Intelligence – {selected_state}
-</h1>
-""", unsafe_allow_html=True)
+st.markdown("<div class='big-title'>📊 Federal Layoff Intelligence</div>", unsafe_allow_html=True)
+st.markdown(f"<div class='subtitle'>Data-driven insights for workforce trends in <b>{selected_state}</b></div>", unsafe_allow_html=True)
 
-# === KPI Metrics ===
-col1, col2 = st.columns(2)
+# === KPI Cards ===
 est_layoffs = decision_data["Estimated Layoffs"].sum()
-top_skill = decision_data.sort_values("Estimated Layoffs", ascending=False)["Skill Category"].head(1).values[0] if not decision_data.empty else "N/A"
+total_feds = fed_data["Employee Count"].sum()
+layoff_pct = (est_layoffs / total_feds) * 100 if total_feds else 0
+top_skill = decision_data.sort_values("Estimated Layoffs", ascending=False)["Skill Category"].iloc[0] if not decision_data.empty else "N/A"
 
-col1.metric("👥 Estimated Layoffs", f"{est_layoffs:,.0f}")
-col2.metric("🏆 Most Affected Skill", top_skill)
+k1, k2, k3 = st.columns(3)
+with k1:
+    st.markdown("<div class='kpi-card'>👥<br><b>Estimated Layoffs</b><br>" + f"{est_layoffs:,.0f}" + "</div>", unsafe_allow_html=True)
+with k2:
+    st.markdown("<div class='kpi-card'>🏆<br><b>Most Affected Skill</b><br>" + top_skill + "</div>", unsafe_allow_html=True)
+with k3:
+    st.markdown("<div class='kpi-card'>📉<br><b>Impact %</b><br>" + f"{layoff_pct:.2f}%" + "</div>", unsafe_allow_html=True)
 
-# === TABS ===
-tab1, tab2, tab3 = st.tabs([
-    "🏢 Federal Staff by Occupation",
-    "📉 Federal Layoff Intelligence",
-    "📰 Layoff News"
-])
+# === Tabs ===
+tab1, tab2, tab3 = st.tabs(["🏢 Workforce Overview", "📉 Layoff Intelligence", "📰 News & Articles"])
 
-# === Tab 1: Federal Staff Overview ===
+# === Tab 1: Workforce Overview ===
 with tab1:
-    st.subheader(f"Federal Agency Workforce – {selected_state}")
+    st.subheader("Federal Workforce Breakdown")
     if not fed_data.empty:
-        chart_data = fed_data.groupby("Occupation Title")["Employee Count"].sum().reset_index()
-        fig = px.bar(
-            chart_data.sort_values("Employee Count", ascending=False).head(10),
+        occ_chart = (
+            fed_data.groupby("Occupation Title")["Employee Count"]
+            .sum().sort_values(ascending=False).head(10).reset_index()
+        )
+        fig_occ = px.bar(
+            occ_chart,
             x="Occupation Title",
             y="Employee Count",
-            title="Top 10 Occupations by Employee Count"
+            title="Top Occupations in Federal Agencies",
+            labels={"Occupation Title": "Occupation", "Employee Count": "Employees"},
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig_occ, use_container_width=True)
         st.dataframe(fed_data, use_container_width=True)
     else:
-        st.info("No federal staffing data available for this state.")
+        st.info("No workforce data for the selected filters.")
 
 # === Tab 2: Layoff Intelligence ===
 with tab2:
-    st.subheader("Top Impacted Job Categories & Skills")
+    st.subheader("Skills at Risk")
     if not decision_data.empty:
-        fig1 = px.bar(
+        fig_skill = px.bar(
             decision_data.sort_values("Estimated Layoffs", ascending=False).head(10),
             x="Skill Category",
             y="Estimated Layoffs",
             color="Action",
-            title="Top Skill Categories by Estimated Layoffs"
+            title="Top Skills by Estimated Layoffs",
         )
-        st.plotly_chart(fig1, use_container_width=True)
+        st.plotly_chart(fig_skill, use_container_width=True)
+
+        bubble = decision_data.groupby(["City", "Skill Category"])["Estimated Layoffs"].sum().reset_index()
+        fig_bubble = px.scatter(
+            bubble,
+            x="City",
+            y="Skill Category",
+            size="Estimated Layoffs",
+            title="Layoff Distribution by City & Skill",
+            size_max=60
+        )
+        st.plotly_chart(fig_bubble, use_container_width=True)
         st.dataframe(decision_data, use_container_width=True)
     else:
-        st.info("No layoff intelligence available.")
+        st.info("No layoff intelligence for this region.")
 
-# === Tab 3: Layoff News ===
+# === Tab 3: News & Insights ===
 with tab3:
-    st.subheader("Federal Layoff News Articles")
+    st.subheader("Related News & Articles")
     if not layoff_data.empty:
+        layoff_data['Date'] = pd.to_datetime(layoff_data['Date'], errors='coerce').dt.strftime('%Y-%m-%d')
         st.dataframe(
             layoff_data[[
                 "Date", "Agency", "Occupations Affected", "Locations Impacted",
@@ -109,4 +158,4 @@ with tab3:
             use_container_width=True
         )
     else:
-        st.info("No layoff-related news found for this state.")
+        st.info("No news articles found for this selection.")
