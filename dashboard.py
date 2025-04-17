@@ -6,7 +6,7 @@ import os
 # === Streamlit Config ===
 st.set_page_config(page_title="Federal Layoff Intelligence", layout="wide", page_icon="📈")
 
-# === CSS Styling ===
+# === Custom CSS Styling ===
 st.markdown("""
     <style>
         body {
@@ -65,14 +65,13 @@ def load_csv(file):
         st.error(f"Missing file: {file}")
         return pd.DataFrame()
 
-# === Load datasets ===
 available_df = load_csv("city_skill_Available_Talent_projection.csv")
 alignment_df = load_csv("city_skill_demand_alignment_live.csv")
 decision_df = load_csv("city_skill_decision_table.csv")
 layoffs_df = load_csv("federal_layoff_news_with_categories.csv")
 fedscope_df = load_csv("fedscope_enriched_summary.csv")
 
-# === Sidebar filters ===
+# === Sidebar Filters ===
 with st.sidebar:
     st.title("📌 Filters")
     states = sorted(decision_df["City"].dropna().unique())
@@ -93,7 +92,7 @@ if selected_agency != "All":
 st.markdown("<div class='main-header'>📊 Federal Layoff Intelligence Dashboard</div>", unsafe_allow_html=True)
 st.markdown(f"<div class='sub-header'>Real-time insight for <strong>{selected_state}</strong> staffing impact</div>", unsafe_allow_html=True)
 
-# === KPIs ===
+# === KPI Metrics ===
 est_layoffs = decision_data["Estimated Layoffs"].sum()
 total_feds = fed_data["Employee Count"].sum()
 layoff_pct = (est_layoffs / total_feds) * 100 if total_feds else 0
@@ -124,16 +123,30 @@ with tab1:
         st.info("No workforce data available.")
     st.markdown("</div>", unsafe_allow_html=True)
 
-# === Tab 2: Layoff Trends ===
+# === Tab 2: Layoff Trends – Bubble Chart + Table ===
 with tab2:
     st.markdown("<div class='section-card'>", unsafe_allow_html=True)
-    st.subheader("📉 Skill Categories at Risk")
+    st.subheader("📉 Skills at Risk – Bubble View")
     if not decision_data.empty:
-        chart = decision_data.sort_values("Estimated Layoffs", ascending=False).head(10)
-        fig = px.bar(chart, x="Skill Category", y="Estimated Layoffs", color="Action", color_discrete_sequence=px.colors.qualitative.Set2)
-        fig.update_layout(xaxis_title="", yaxis_title="Estimated Layoffs", height=400)
+        bubble = decision_data.sort_values("Estimated Layoffs", ascending=False).head(20)
+        fig = px.scatter(
+            bubble,
+            x="Skill Category",
+            y=[1] * len(bubble),  # Dummy y to center bubbles
+            size="Estimated Layoffs",
+            color="Action",
+            hover_name="Skill Category",
+            size_max=80,
+            title="Top Skill Categories by Layoff Impact"
+        )
+        fig.update_layout(showlegend=True, height=500, xaxis_title="", yaxis=dict(showticklabels=False, title=""))
         st.plotly_chart(fig, use_container_width=True)
-        st.dataframe(decision_data, use_container_width=True)
+
+        # Summary Table
+        table = bubble.copy()
+        table["% of Total"] = (table["Estimated Layoffs"] / table["Estimated Layoffs"].sum()) * 100
+        st.subheader("📊 Breakdown Table")
+        st.dataframe(table[["Skill Category", "Estimated Layoffs", "% of Total", "Action"]])
     else:
         st.info("No layoff data found.")
     st.markdown("</div>", unsafe_allow_html=True)
