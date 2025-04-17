@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import os
 
-# === Streamlit Config ===
+# === Page Config ===
 st.set_page_config(page_title="Federal Layoff Intelligence", layout="wide", page_icon="📈")
 
 # === Custom CSS Styling ===
@@ -65,13 +65,14 @@ def load_csv(file):
         st.error(f"Missing file: {file}")
         return pd.DataFrame()
 
+# === Read Datasets ===
 available_df = load_csv("city_skill_Available_Talent_projection.csv")
 alignment_df = load_csv("city_skill_demand_alignment_live.csv")
 decision_df = load_csv("city_skill_decision_table.csv")
 layoffs_df = load_csv("federal_layoff_news_with_categories.csv")
 fedscope_df = load_csv("fedscope_enriched_summary.csv")
 
-# === Sidebar Filters ===
+# === Sidebar ===
 with st.sidebar:
     st.title("📌 Filters")
     states = sorted(decision_df["City"].dropna().unique())
@@ -88,11 +89,11 @@ if selected_agency != "All":
     fed_data = fed_data[fed_data["Agency Name"] == selected_agency]
     layoff_data = layoff_data[layoff_data["Agency"] == selected_agency]
 
-# === Page Header ===
+# === Header ===
 st.markdown("<div class='main-header'>📊 Federal Layoff Intelligence Dashboard</div>", unsafe_allow_html=True)
 st.markdown(f"<div class='sub-header'>Real-time insight for <strong>{selected_state}</strong> staffing impact</div>", unsafe_allow_html=True)
 
-# === KPI Metrics ===
+# === KPI Cards ===
 est_layoffs = decision_data["Estimated Layoffs"].sum()
 total_feds = fed_data["Employee Count"].sum()
 layoff_pct = (est_layoffs / total_feds) * 100 if total_feds else 0
@@ -123,16 +124,25 @@ with tab1:
         st.info("No workforce data available.")
     st.markdown("</div>", unsafe_allow_html=True)
 
-# === Tab 2: Layoff Trends – Bubble Chart + Table ===
+# === Tab 2: Layoff Trends with Action Filter ===
 with tab2:
     st.markdown("<div class='section-card'>", unsafe_allow_html=True)
     st.subheader("📉 Skills at Risk – Bubble View")
-    if not decision_data.empty:
-        bubble = decision_data.sort_values("Estimated Layoffs", ascending=False).head(20)
+
+    available_actions = decision_data["Action"].dropna().unique().tolist()
+    selected_action = st.selectbox("Filter by Action", ["All"] + available_actions)
+
+    bubble = decision_data.copy()
+    if selected_action != "All":
+        bubble = bubble[bubble["Action"] == selected_action]
+
+    bubble = bubble.sort_values("Estimated Layoffs", ascending=False).head(20)
+
+    if not bubble.empty:
         fig = px.scatter(
             bubble,
             x="Skill Category",
-            y=[1] * len(bubble),  # Dummy y to center bubbles
+            y=[1] * len(bubble),
             size="Estimated Layoffs",
             color="Action",
             hover_name="Skill Category",
@@ -142,13 +152,12 @@ with tab2:
         fig.update_layout(showlegend=True, height=500, xaxis_title="", yaxis=dict(showticklabels=False, title=""))
         st.plotly_chart(fig, use_container_width=True)
 
-        # Summary Table
         table = bubble.copy()
         table["% of Total"] = (table["Estimated Layoffs"] / table["Estimated Layoffs"].sum()) * 100
         st.subheader("📊 Breakdown Table")
         st.dataframe(table[["Skill Category", "Estimated Layoffs", "% of Total", "Action"]])
     else:
-        st.info("No layoff data found.")
+        st.info("No data available for the selected filter.")
     st.markdown("</div>", unsafe_allow_html=True)
 
 # === Tab 3: Layoff News ===
