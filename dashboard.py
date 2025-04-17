@@ -41,33 +41,13 @@ st.markdown(f"""
 </h1>
 """, unsafe_allow_html=True)
 
-# === KPI METRICS (BASED ON ESTIMATED LAYOFFS) ===
-st.markdown(f"### 📌 Federal Layoff Intelligence — {label_title}")
-col1, col2, col3 = st.columns(3)
+# === KPI Metrics ===
+col1, col2 = st.columns(2)
+est_layoffs = decision_data["Estimated Layoffs"].sum()
+top_skill = decision_data.sort_values("Estimated Layoffs", ascending=False)["Skill Category"].head(1).values[0]
 
-# Filter data based on view
-layoff_summary = decision_data.copy()
-
-# KPI 1: Total Estimated Layoffs
-total_layoffs = layoff_summary["Estimated Layoffs"].sum()
-
-# KPI 2: Total Unique Roles
-unique_roles = layoff_summary["Occupation Title"].nunique()
-
-# KPI 3: Top Impacted Skill Category
-if not layoff_summary.empty:
-    top_skill = (
-        layoff_summary.groupby("Skill Category")["Estimated Layoffs"]
-        .sum()
-        .sort_values(ascending=False)
-        .index[0]
-    )
-else:
-    top_skill = "N/A"
-
-col1.metric("👥 Total Estimated Layoffs", f"{total_layoffs:,.0f}")
-col2.metric("💼 Affected Job Roles", unique_roles)
-col3.metric("🏆 Most Impacted Skill Category", top_skill)
+col1.metric("👥 Estimated Layoffs", f"{est_layoffs:,.0f}")
+col2.metric("🏆 Most Affected Skill", top_skill)
 
 # === TABS ===
 tab1, tab2, tab3 = st.tabs([
