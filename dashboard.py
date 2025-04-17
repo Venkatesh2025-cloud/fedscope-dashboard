@@ -9,7 +9,7 @@ st.set_page_config(
     page_icon="📊"
 )
 
-# === Styling ===
+# === Custom CSS for SaaS Look ===
 st.markdown("""
     <style>
         .big-title {
@@ -35,11 +35,10 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# === Paths ===
+# === Load Data ===
 BASE_DIR = os.path.dirname(__file__)
 DATA_PATH = os.path.join(BASE_DIR, "data")
 
-# === Load Data ===
 def load_csv(file_name):
     path = os.path.join(DATA_PATH, file_name)
     if os.path.exists(path):
@@ -67,7 +66,7 @@ with st.sidebar:
     st.caption("🔄 Data auto-refreshes every 24h")
     st.caption("🧠 Powered by Streamlit + Plotly")
 
-# === Filter Datasets ===
+# === Filtered Data ===
 avail_data = available_df[available_df["Location Name"] == selected_state]
 decision_data = decision_df[decision_df["City"] == selected_state]
 layoff_data = layoffs_df[layoffs_df["Locations Impacted"].str.contains(selected_state, case=False, na=False)]
@@ -89,14 +88,19 @@ top_skill = decision_data.sort_values("Estimated Layoffs", ascending=False)["Ski
 
 k1, k2, k3 = st.columns(3)
 with k1:
-    st.markdown("<div class='kpi-card'>👥<br><b>Estimated Layoffs</b><br>" + f"{est_layoffs:,.0f}" + "</div>", unsafe_allow_html=True)
+    st.markdown(f"<div class='kpi-card'>👥<br><b>Estimated Layoffs</b><br>{est_layoffs:,.0f}</div>", unsafe_allow_html=True)
 with k2:
-    st.markdown("<div class='kpi-card'>🏆<br><b>Most Affected Skill</b><br>" + top_skill + "</div>", unsafe_allow_html=True)
+    st.markdown(f"<div class='kpi-card'>🏆<br><b>Most Affected Skill</b><br>{top_skill}</div>", unsafe_allow_html=True)
 with k3:
-    st.markdown("<div class='kpi-card'>📉<br><b>Impact %</b><br>" + f"{layoff_pct:.2f}%" + "</div>", unsafe_allow_html=True)
+    st.markdown(f"<div class='kpi-card'>📉<br><b>Impact %</b><br>{layoff_pct:.2f}%</div>", unsafe_allow_html=True)
 
 # === Tabs ===
-tab1, tab2, tab3 = st.tabs(["🏢 Workforce Overview", "📉 Layoff Intelligence", "📰 News & Articles"])
+tab1, tab2, tab3, tab4 = st.tabs([
+    "🏢 Workforce Overview",
+    "📉 Layoff Intelligence",
+    "📰 News & Articles",
+    "🧠 AI Suggestions"
+])
 
 # === Tab 1: Workforce Overview ===
 with tab1:
@@ -106,13 +110,7 @@ with tab1:
             fed_data.groupby("Occupation Title")["Employee Count"]
             .sum().sort_values(ascending=False).head(10).reset_index()
         )
-        fig_occ = px.bar(
-            occ_chart,
-            x="Occupation Title",
-            y="Employee Count",
-            title="Top Occupations in Federal Agencies",
-            labels={"Occupation Title": "Occupation", "Employee Count": "Employees"},
-        )
+        fig_occ = px.bar(occ_chart, x="Occupation Title", y="Employee Count", title="Top Occupations in Federal Agencies")
         st.plotly_chart(fig_occ, use_container_width=True)
         st.dataframe(fed_data, use_container_width=True)
     else:
@@ -127,35 +125,54 @@ with tab2:
             x="Skill Category",
             y="Estimated Layoffs",
             color="Action",
-            title="Top Skills by Estimated Layoffs",
+            title="Top Skills by Estimated Layoffs"
         )
         st.plotly_chart(fig_skill, use_container_width=True)
 
         bubble = decision_data.groupby(["City", "Skill Category"])["Estimated Layoffs"].sum().reset_index()
-        fig_bubble = px.scatter(
-            bubble,
-            x="City",
-            y="Skill Category",
-            size="Estimated Layoffs",
-            title="Layoff Distribution by City & Skill",
-            size_max=60
-        )
+        fig_bubble = px.scatter(bubble, x="City", y="Skill Category", size="Estimated Layoffs", title="Layoff Distribution by City & Skill", size_max=60)
         st.plotly_chart(fig_bubble, use_container_width=True)
         st.dataframe(decision_data, use_container_width=True)
     else:
         st.info("No layoff intelligence for this region.")
 
-# === Tab 3: News & Insights ===
+# === Tab 3: News & Articles ===
 with tab3:
     st.subheader("Related News & Articles")
     if not layoff_data.empty:
         layoff_data['Date'] = pd.to_datetime(layoff_data['Date'], errors='coerce').dt.strftime('%Y-%m-%d')
-        st.dataframe(
-            layoff_data[[
-                "Date", "Agency", "Occupations Affected", "Locations Impacted",
-                "Key Skills Potentially Affected", "Layoff Risk Level", "Article Title", "Link"
-            ]],
-            use_container_width=True
-        )
+        st.dataframe(layoff_data[[
+            "Date", "Agency", "Occupations Affected", "Locations Impacted",
+            "Key Skills Potentially Affected", "Layoff Risk Level", "Article Title", "Link"
+        ]], use_container_width=True)
     else:
         st.info("No news articles found for this selection.")
+
+# === Tab 4: AI-Powered Skill Suggestions ===
+with tab4:
+    st.subheader("🧠 Smart Skill Suggestions & Insights")
+
+    if not decision_data.empty:
+        top_skills = decision_data.groupby("Skill Category")["Estimated Layoffs"].sum().sort_values(ascending=False)
+        top_actions = decision_data["Action"].value_counts()
+        risky_roles = decision_data["Skill Category"].value_counts().head(5).index.tolist()
+
+        st.markdown("### 📌 Summary")
+        st.info(f"""
+- Most layoffs are occurring in **{top_skills.index[0]}**
+- Common agency response: **{top_actions.index[0]}**
+- Top impacted skill categories: **{", ".join(risky_roles)}**
+        """)
+
+        st.markdown("### 💡 Suggested Skill Development Areas")
+        for skill in top_skills.index[:3]:
+            st.success(f"✅ Consider upskilling in **{skill}** to align with shifting agency priorities.")
+
+        st.markdown("### 🧭 Strategy Tips")
+        st.write("""
+- Cross-train teams on digital tools, data analysis, or policy strategy.
+- Encourage flexible skills across adjacent categories (e.g., "Cybersecurity" ⇨ "Cloud Security").
+- Monitor demand data in the next cycle for shifting agency needs.
+        """)
+    else:
+        st.warning("No actionable layoff data available to generate suggestions.")
