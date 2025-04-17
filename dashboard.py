@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import os
-import openai  # works with openai==0.28
 
 # === Streamlit Config ===
 st.set_page_config(page_title="Federal Layoff Intelligence", layout="wide", page_icon="📊")
@@ -58,6 +57,7 @@ def load_csv(filename):
         st.error(f"Missing file: {filename}")
         return pd.DataFrame()
 
+# === Load Data ===
 available_df = load_csv("city_skill_Available_Talent_projection.csv")
 alignment_df = load_csv("city_skill_demand_alignment_live.csv")
 decision_df = load_csv("city_skill_decision_table.csv")
@@ -84,9 +84,9 @@ if selected_agency != "All":
 
 # === Header ===
 st.markdown("<div class='main-title'>📊 Federal Layoff Intelligence</div>", unsafe_allow_html=True)
-st.markdown(f"<div class='subtitle'>AI-enhanced insights for <strong>{selected_state}</strong></div>", unsafe_allow_html=True)
+st.markdown(f"<div class='subtitle'>Workforce data insights for <strong>{selected_state}</strong></div>", unsafe_allow_html=True)
 
-# === KPIs ===
+# === KPI Cards ===
 est_layoffs = decision_data["Estimated Layoffs"].sum()
 total_feds = fed_data["Employee Count"].sum()
 layoff_pct = (est_layoffs / total_feds) * 100 if total_feds else 0
@@ -100,8 +100,8 @@ with k2:
 with k3:
     st.markdown(f"<div class='kpi-card'><h2>Layoff Impact</h2><p>{layoff_pct:.2f}%</p></div>", unsafe_allow_html=True)
 
-# === Tabs ===
-tab1, tab2, tab3, tab4 = st.tabs(["🏢 Workforce", "📉 Layoffs", "📰 News", "🤖 AI Assistant"])
+# === Tabs (AI Assistant Removed) ===
+tab1, tab2, tab3 = st.tabs(["🏢 Workforce", "📉 Layoffs", "📰 News"])
 
 # === Tab 1: Workforce Overview ===
 with tab1:
@@ -126,9 +126,9 @@ with tab2:
     else:
         st.info("No layoff data for this selection.")
 
-# === Tab 3: Layoff News ===
+# === Tab 3: News ===
 with tab3:
-    st.subheader("News Related to Layoffs")
+    st.subheader("Layoff News Articles")
     if not layoff_data.empty:
         layoff_data["Date"] = pd.to_datetime(layoff_data["Date"], errors='coerce').dt.strftime('%Y-%m-%d')
         st.dataframe(layoff_data[[
@@ -137,36 +137,3 @@ with tab3:
         ]], use_container_width=True)
     else:
         st.info("No news found for this selection.")
-
-# === Tab 4: AI Assistant using Together.ai ===
-with tab4:
-    st.subheader("🤖 AI Assistant (Together.ai)")
-    if not decision_data.empty:
-        st.markdown("Fetching insights from Together.ai...")
-
-        top_data = decision_data.sort_values("Estimated Layoffs", ascending=False).head(10)
-        csv_input = top_data.to_csv(index=False)
-
-        try:
-            openai.api_key = "25bae72c1f7d2d900ca110aab45578f4d0ca91effebbfe5ad81cea43c8036c0a"
-            openai.api_base = "https://api.together.xyz/v1"
-
-            response = openai.ChatCompletion.create(
-                model="togethercomputer/llama-2-70b-chat",
-                messages=[
-                    {"role": "system", "content": "You are an expert in federal workforce planning."},
-                    {"role": "user", "content": f"Analyze this layoff data and suggest skill strategies:\n\n{csv_input}"}
-                ],
-                temperature=0.7,
-                max_tokens=600
-            )
-
-            ai_output = response['choices'][0]['message']['content']
-            st.markdown("### 💡 GPT-Generated Insights")
-            st.success(ai_output)
-
-        except Exception as e:
-            st.error("❌ AI Request failed. Check Together.ai API access.")
-            st.exception(e)
-    else:
-        st.warning("No data available to generate AI insights.")
